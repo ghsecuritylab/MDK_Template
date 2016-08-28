@@ -1,0 +1,15 @@
+.\objects\rcc_config.o: ..\Drivers\board_drivers\rcc_config.c
+.\objects\rcc_config.o: ..\Drivers\board_drivers\rcc_config.h
+.\objects\rcc_config.o: ..\Applications\stm32f10x.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
+.\objects\rcc_config.o: ..\Applications\system_stm32f10x.h
+.\objects\rcc_config.o: ..\Applications\stm32f10x_conf.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+.\objects\rcc_config.o: ..\Applications\stm32f10x.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\rcc_config.o: C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h

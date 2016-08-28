@@ -1,0 +1,185 @@
+Dependencies for Project 'project', Target 'Template': (DO NOT MODIFY !)
+F (..\Applications\main.c)(0x57AD270F)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\main.o --depend .\objects\main.d)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Applications\stm32f10x_it.c)(0x4D99A59E)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_it.o --depend .\objects\stm32f10x_it.d)
+I (..\Applications\stm32f10x_it.h)(0x4D99A59E)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Drivers\user_drivers\digitron.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\digitron.o --depend .\objects\digitron.d)
+I (..\Drivers\user_drivers\digitron.h)(0x579727D0)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+I (..\Drivers\board_drivers\delay.h)(0x579727D0)
+F (..\Drivers\user_drivers\key.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\key.o --depend .\objects\key.d)
+I (..\Drivers\user_drivers\key.h)(0x57AD26AC)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Drivers\user_drivers\led.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\led.o --depend .\objects\led.d)
+I (..\Drivers\user_drivers\led.h)(0x57AD26AC)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Drivers\board_drivers\delay.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\delay.o --depend .\objects\delay.d)
+I (..\Drivers\board_drivers\delay.h)(0x579727D0)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Drivers\board_drivers\exti_dup.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\exti_dup.o --depend .\objects\exti_dup.d)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+I (..\Drivers\board_drivers\exti_dup.h)(0x57AD26AC)
+I (..\Drivers\board_drivers\delay.h)(0x579727D0)
+I (..\Drivers\user_drivers\led.h)(0x57AD26AC)
+F (..\Drivers\board_drivers\rcc_config.c)(0x57AD2507)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\rcc_config.o --depend .\objects\rcc_config.d)
+I (..\Drivers\board_drivers\rcc_config.h)(0x579727D0)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (..\Docs\readme.txt)(0x57A6F22F)()
+F (..\Docs\update_log.txt)(0x57A6EEED)()
+F (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\src\misc.c)(0x53B66212)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\misc.o --depend .\objects\misc.d)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+F (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\src\stm32f10x_exti.c)(0x53B66212)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_exti.o --depend .\objects\stm32f10x_exti.d)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\src\stm32f10x_gpio.c)(0x53B66212)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_gpio.o --depend .\objects\stm32f10x_gpio.d)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\src\stm32f10x_rcc.c)(0x53B66212)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_rcc.o --depend .\objects\stm32f10x_rcc.d)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
+F (RTE\Device\STM32F103RB\RTE_Device.h)(0x56F9DE5C)()
+F (RTE\Device\STM32F103RB\startup_stm32f10x_md.s)(0x4F1E2E3C)(--cpu Cortex-M3 --apcs=interwork -I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (RTE\Device\STM32F103RB\stm32f10x_conf.h)(0x53B66212)()
+F (RTE\Device\STM32F103RB\system_stm32f10x.c)(0x4F1E2E3C)(-c --cpu Cortex-M3 -O0 --apcs=interwork --split_sections -I.\RTE -I.\RTE\Device\STM32F103RB -I..\Applications -I..\Docs -I..\Drivers\board_drivers -I..\Drivers\user_drivers-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE-I F:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --depend .\objects\system_stm32f10x.d)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
+I (C:\mySoftware\MDK\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F373D7)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x53B66212)
+I (C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x53B66212)
