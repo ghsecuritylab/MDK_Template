@@ -2,7 +2,7 @@
 .\objects\digitron.o: ..\Drivers\user_drivers\digitron.h
 .\objects\digitron.o: ..\Applications\stm32f10x.h
 .\objects\digitron.o: ..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h
-.\objects\digitron.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\digitron.o: C:\My Softwares\MDK_520\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\digitron.o: ..\Applications\system_stm32f10x.h
 .\objects\digitron.o: ..\Applications\stm32f10x_conf.h
 .\objects\digitron.o: ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h

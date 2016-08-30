@@ -2,9 +2,15 @@
 ".\objects\core_cm3.o"
 ".\objects\startup_stm32f10x_md.o"
 ".\objects\misc.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_dma.o"
 ".\objects\stm32f10x_exti.o"
 ".\objects\stm32f10x_gpio.o"
 ".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_rtc.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\system_stm32f10x.o"
@@ -14,7 +20,9 @@
 ".\objects\delay.o"
 ".\objects\exti_dup.o"
 ".\objects\rcc_config.o"
---nodebug --strict --scatter ".\Objects\project.sct"
+".\objects\nvic_config.o"
+".\objects\tim_dup.o"
+--strict --scatter ".\Objects\project.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\project.map" -o .\Objects\project.axf

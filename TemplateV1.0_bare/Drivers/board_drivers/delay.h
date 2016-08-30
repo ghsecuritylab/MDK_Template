@@ -16,4 +16,10 @@
 void delay_n_us(uint16_t n_us);
 void delay_n_ms(uint16_t n_ms);
 
+void inc_tick(void);
+uint32_t get_tick(void);
+void systick_init(void);
+void systick_delay(__IO uint32_t ms);
+
+
 #endif

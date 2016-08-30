@@ -1,9 +1,11 @@
 /**
+  *
   * @file    key.h 
   * @author  Z B T
   * @version V0.1
   * @date    2016-01-29
-  * @brief   
+  * @brief   独立按键驱动程序
+  *
   */  
 
 #ifndef __KEY_H
@@ -12,24 +14,26 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
 
-/* Public define ------------------------------------------------------------*/
-/** 定义独立按键用到的GPIO */
-#define GPIO_PIN_KEY        (GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11\
-| GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15)
+/* Private define ------------------------------------------------------------*/
 
-#define GPIO_KEY            GPIOB               /**< 定义独立按键所使用的GPIO端口 */
 
-#define GPIO_KEY_0          GPIO_Pin_15
-#define GPIO_KEY_1          GPIO_Pin_14
-#define GPIO_KEY_2          GPIO_Pin_13
-#define GPIO_KEY_3          GPIO_Pin_12
-#define GPIO_KEY_4          GPIO_Pin_11
-#define GPIO_KEY_5          GPIO_Pin_10
-#define GPIO_KEY_6          GPIO_Pin_9
-#define GPIO_KEY_7          GPIO_Pin_8
-#define GPIO_KEY_All        GPIO_PIN_KEY
+enum KEY_N
+{
+    KEY_1, KEY_2, KEY_3, KEY_4,
+    KEY_5, KEY_6, KEY_7, KEY_8,
+    NO_KEY = 0xff,
+}; 
+
+struct GPIO_KEY
+{
+    GPIO_TypeDef        *port;
+    uint16_t            pin;
+    GPIOSpeed_TypeDef   speed;
+    GPIOMode_TypeDef    mode;
+};
 
 /* Public function prototypes ------------------------------------------------*/
-void KEY_Init(void);
+void GPIO_key_config(void);
+enum KEY_N key_read(void);
 
 #endif
