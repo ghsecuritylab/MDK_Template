@@ -1,5 +1,4 @@
 /**
-  *
   * @file    exti_dup.h 
   * @author  Z B T
   * @version V0.1

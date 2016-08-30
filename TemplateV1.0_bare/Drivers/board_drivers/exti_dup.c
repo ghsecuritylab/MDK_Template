@@ -1,5 +1,4 @@
 /**
-  *
   * @file    exti_dup.c 
   * @author  Z B T
   * @version V0.1
