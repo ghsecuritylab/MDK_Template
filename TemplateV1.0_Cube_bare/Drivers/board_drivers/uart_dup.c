@@ -83,26 +83,9 @@ uint8_t uart1_get_recv_cmd(void)
   */
 int fputc(int ch, FILE *f)
 {
-
-     if (ch == '\r')    /**< 用于换行 */
-    {
-        HAL_UART_Transmit_DMA(&huart1, (uint8_t *)'\r', 1);
-//        delay_n_ms(5);
-        HAL_Delay(5);
-        HAL_UART_Transmit_DMA(&huart1, (uint8_t *)'\n', 1);
-        /**< 似乎不同的串口助手 需要的延时不太一样 不过这个长度够长了  可以减少*/
-//        delay_n_ms(100);
-        HAL_Delay(100);        
-        while (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_TXE) == RESET);
-    }
-    else
-    {
-        HAL_UART_Transmit_DMA(&huart1, (uint8_t *)&ch, PRINTF_BUFF_SIZE);
-//        delay_n_ms(100);
-        HAL_Delay(50);
-        while (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_TXE) == RESET);
-    }
-         
+    /** 循环发送字符串直到传输完毕 */
+    HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 0xffff);     
+    
     return ch;
 }
 

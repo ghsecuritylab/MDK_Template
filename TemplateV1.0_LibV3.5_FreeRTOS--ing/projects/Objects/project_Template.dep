@@ -1,0 +1,372 @@
+Dependencies for Project 'project', Target 'Template': (DO NOT MODIFY !)
+F (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+F (..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x4D783CD2)(--cpu Cortex-M3 -g --apcs=interwork -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 521" --pd "STM32F10X_CL SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_adc.o --omf_browse .\objects\stm32f10x_adc.crf --depend .\objects\stm32f10x_adc.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_dma.o --omf_browse .\objects\stm32f10x_dma.crf --depend .\objects\stm32f10x_dma.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_exti.o --omf_browse .\objects\stm32f10x_exti.crf --depend .\objects\stm32f10x_exti.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_rtc.o --omf_browse .\objects\stm32f10x_rtc.crf --depend .\objects\stm32f10x_rtc.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x4D783BB4)()
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_spi.o --omf_browse .\objects\stm32f10x_spi.crf --depend .\objects\stm32f10x_spi.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_tim.o --omf_browse .\objects\stm32f10x_tim.crf --depend .\objects\stm32f10x_tim.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x4D783BB4)()
+F (..\Applications\main.c)(0x57EBC2D7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\Applications\thread.h)(0x57EBC2CA)
+F (..\Applications\stm32f10x_it.c)(0x57EB9C0F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
+I (..\Applications\stm32f10x_it.h)(0x4D99A59E)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Applications\system_stm32f10x.c)(0x4D783CB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (..\Applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\Applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\applications\thread.c)(0x57EBC2CA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\thread.o --omf_browse .\objects\thread.crf --depend .\objects\thread.d)
+I (..\applications\thread.h)(0x57EBC2CA)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\drivers\user_drivers\led.h)(0x56F8E115)
+I (..\drivers\board_drivers\delay.h)(0x57C448A5)
+F (..\Drivers\user_drivers\led.c)(0x57EBC30B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\Drivers\user_drivers\led.h)(0x56F8E115)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Drivers\board_drivers\delay.c)(0x57C44976)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\Drivers\board_drivers\delay.h)(0x57C448A5)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Drivers\board_drivers\exti_dup.c)(0x57C4D9E7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\exti_dup.o --omf_browse .\objects\exti_dup.crf --depend .\objects\exti_dup.d)
+I (..\Drivers\board_drivers\exti_dup.h)(0x57C4D9E7)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\Drivers\board_drivers\delay.h)(0x57C448A5)
+I (..\drivers\user_drivers\led.h)(0x56F8E115)
+F (..\Drivers\board_drivers\rcc_config.c)(0x57AD2507)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\rcc_config.o --omf_browse .\objects\rcc_config.crf --depend .\objects\rcc_config.d)
+I (..\Drivers\board_drivers\rcc_config.h)(0x579727D0)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Drivers\board_drivers\nvic_config.c)(0x57C4D9E7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\nvic_config.o --omf_browse .\objects\nvic_config.crf --depend .\objects\nvic_config.d)
+I (..\Drivers\board_drivers\nvic_config.h)(0x57C4D9E7)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Drivers\board_drivers\tim_dup.c)(0x57C4D9E7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\tim_dup.o --omf_browse .\objects\tim_dup.crf --depend .\objects\tim_dup.d)
+I (..\Drivers\board_drivers\tim_dup.h)(0x57C4D9E7)
+I (..\applications\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\Core\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\applications\system_stm32f10x.h)(0x4D783CAA)
+I (..\applications\stm32f10x_conf.h)(0x56F3728A)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
+F (..\Docs\readme.txt)(0x57C4D592)()
+F (..\Docs\update_log.txt)(0x57C4DA14)()
+F (..\freertos_9.0.0\Source\croutine.c)(0x573F3A16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\croutine.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\event_groups.c)(0x573F3A16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\timers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\event_groups.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\list.c)(0x573F3A16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\queue.c)(0x573F3A17)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\queue.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\tasks.c)(0x573F3A17)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\timers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\StackMacros.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+F (..\freertos_9.0.0\Source\timers.c)(0x573F3A17)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\queue.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\timers.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\port.c)(0x573F3A17)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)
+F (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)()
+F (..\freertos_9.0.0\Source\portable\MemMang\heap_4.c)(0x573F3A16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\STM32F10x_FWLib\Core\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\STM32F10x_FWLib\Core\CM3\CoreSupport -I ..\STM32F10x_FWLib\STM32F10x_StdPeriph_Driver\inc -I ..\applications -I ..\docs -I ..\drivers\board_drivers -I ..\drivers\user_drivers -I ..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3 -I ..\freertos_9.0.0\Source\include -I ..\freertos_9.0.0\Config-IF:\MDK_STM32\MDK_Template\TemplateV1.0_LibV3.5_FreeRTOS\projects\RTE-I"C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"C:\My Softwares\MDK_520\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F10X_CL -DSTM32F10x_HD -DUSE_STDPERIPH_DRIVER-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\freertos_9.0.0\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (C:\My Softwares\MDK_520\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\freertos_9.0.0\Config\FreeRTOSConfig.h)(0x57EBB9F1)
+I (..\freertos_9.0.0\Source\include\projdefs.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\portable.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\freertos_9.0.0\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\task.h)(0x573F3A16)
+I (..\freertos_9.0.0\Source\include\list.h)(0x573F3A16)

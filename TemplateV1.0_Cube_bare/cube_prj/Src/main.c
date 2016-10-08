@@ -85,13 +85,15 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 
-    GUI_Init();
-    GUI_UC_SetEncodeUTF8();
-    GUI_SetBkColor(GUI_BLACK);
-    GUI_SetColor(GUI_GREEN);
+//    GUI_Init();
+//    GUI_UC_SetEncodeUTF8();
+//    GUI_SetBkColor(GUI_BLACK);
+//    GUI_SetColor(GUI_GREEN);
 
-    GUI_SetFont(&GUI_FontYaHei28); 
-    GUI_DispStringAt("南京工业大学", 80, 100);  
+//    GUI_SetFont(&GUI_FontYaHei28); 
+//    GUI_DispStringAt("南京工业大学", 80, 100);  
+    
+    printf("Hello USART1\n");
     
   /* USER CODE END 2 */
 

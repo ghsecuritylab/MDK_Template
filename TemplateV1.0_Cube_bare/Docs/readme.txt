@@ -8,7 +8,7 @@
 
   1. RTC时钟程序
     硬件平台：   STM32F107VCT6学习板
-    软件平台：   MDK V5.20 & V5.17 + STM32Cube MX 4.14
+    软件平台：   MDK V5.20 & V5.17 + STM32Cube MX 4.14 + STemwin5.22
     操作系统：   无（裸机开发模板）
 	
 	/** 去除编译器对汉字奇数字符的警告 在Options for target的C++选项中的misc control
