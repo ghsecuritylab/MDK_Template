@@ -4,8 +4,6 @@
   * @version V1.0   
   * @date    2016-01-29
   * @brief   Main program body project template 
-  * @note    虽然#include "stm32f10x.h" 左边出现红色的X，编译下来0 errors，
-             0 warnings， 网上有人讲是编译器的问题，这个目前未发现对项目有影响
   */  
 
 /* Includes ------------------------------------------------------------------*/

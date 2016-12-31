@@ -18,5 +18,24 @@
 	
 	已经配置usart1串口可作为调试用
 	drivers文件下（包括user drivers & board drivers）的驱动头文件均需在bsp.h中包含
-  
+	
+	1.1 STM32F407ZGT6引脚分配说明
+		下载方式：SWD -> SWDIO SWCLK
+		串口打印：USART1 -> USART_TX（PA9） + USART_RX（PA10）
+		液晶触摸：
+				SPI1 -> SCK（PA5） + MISO（PA6） + MOSI（PA7）
+				CS（PA4） + RESET（PC5）+ INT（PC4）
+				
+	1.2 项目工程文件架构说明
+		Application/MDK_ARM				--------	STM32启动文件		
+		Application/User 				--------  	存放应用层程序
+		Drivers/CMSIS					--------	M4内核外设接口层系统源文件
+		Drivers/STM32F1xx_HAL_Drivers	--------	STM32F1的HAL库源文件
+		Drviers/User     				-------- 	存放非STM32片上外设驱动程序
+		Drivers/Board   				--------  	存放STM32片上外设相关驱动程序
+		Middlewares/FreeRTOS			--------	FreeRTOS相关文件
+		STemwin/Config					--------	存放移植STemwin所需的配置文件
+		STemwin/Font					--------	存放用到的字体
+		Docs							--------  	存放项目工程说明文件
+		
   2. 工程说明

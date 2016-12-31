@@ -1,16 +1,17 @@
 /**
- * @file lcd_ssd1289.c
- * @brief  lcd驱动程序(仅支持ssd1289芯片)
- * @author 王晓荣
- * @version 
- * @date 2014-04-02
- */
+  * @file  lcd_ssd1289.c
+  * @brief lcd驱动程序(SSD1289)
+  * @par   date        version    author    remarks
+  *        2014-04-02  v0.2       王晓荣    初次创建
+  *        2016-05-18  v1.0       zbt       修改程序风格，移植到Cube平台   
+  *
+  */
 
-#include "lcd_ssd1289.h"
-#include "delay.h"
+/** 头文件包含区 ------------------------------------------------ */ 
+#include "bsp.h"
 #include "lcd_font.h"
-#include <math.h>
 
+/** 私有宏(类型定义) -------------------------------------------- */ 
 /** 引脚定义 */
 #define LCD_WR_PIN			GPIO_PIN_14
 #define LCD_WR_PORT			GPIOD
@@ -31,8 +32,11 @@
 #define LCD_DATA_PORT   	GPIOE
 #define LCD_DATA_APB2Periph	RCC_APB2Periph_GPIOE 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+/** 私有变量 --------------------------------------------------- */ 
 
+/** 外部变量 --------------------------------------------------- */
+
+/** 私有函数原型 ----------------------------------------------- */
 static void     lcd_pin_config(void);
 static void     lcd_write_reg(uint16_t reg,uint16_t value);
 static void     lcd_ram_prepare(void);
@@ -58,11 +62,13 @@ static void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal);
 #define lcd_set_rst()			HAL_GPIO_WritePin(LCD_RST_PORT, LCD_RST_PIN, GPIO_PIN_SET)
 #define lcd_clr_rst()			HAL_GPIO_WritePin(LCD_RST_PORT, LCD_RST_PIN, GPIO_PIN_RESET)
 
+/** 公有函数 --------------------------------------------------- */
+
 /**
- *  @Brief  LCD测试
- *  @param  None
- *  @return None
- */
+  * @brief  LCD测试
+  * @param  None
+  * @retval None
+  */
 void lcd_test(void)
 {
 	/** 输出文本测试 */
@@ -81,14 +87,15 @@ void lcd_test(void)
 }
 
 /**
- *  @Brief  LCD配置函数
- *  @param  None
- *  @return None
- */
+  * @brief  LCD配置函数
+  * @param  None
+  * @retval None
+  */
 void lcd_config(void)
 {
 	lcd_pin_config();					
-	delay_ms(50);
+//	delay_ms(50);
+    HAL_Delay(50);
 	
 	/** 控制引脚初始化 */
 	lcd_set_cs();	
@@ -98,7 +105,8 @@ void lcd_config(void)
 	
 	/** 开启内部振荡器 */
  	lcd_write_reg(0x0000,0x0001);		
- 	delay_ms(50);										/**< 等待osc稳定 */
+// 	delay_ms(50);										/**< 等待osc稳定 */
+    HAL_Delay(50);
 
 	/** 执行上电流程 */
 	lcd_write_reg(0x0003,0xA8A4);		
@@ -106,7 +114,8 @@ void lcd_config(void)
 	lcd_write_reg(0x000D,0x080C);        
 	lcd_write_reg(0x000E,0x2B00);        
 	lcd_write_reg(0x001E,0x00B0);  
-	delay_ms(50);	  
+//	delay_ms(50);	 
+    HAL_Delay(50);
 	
     /** .13  0：RGB的值越小越亮；1：RGB的值越大越亮
      *  .11  0：RGB；1: BGR
@@ -152,10 +161,10 @@ void lcd_config(void)
 }
 
 /**
- *  @Brief  LCD清屏
- *  @param  [in]color 刷屏颜色
- *  @return None
- */
+  *  @brief  LCD清屏
+  *  @param  [in]color 刷屏颜色
+  *  @retval None
+  */
 void lcd_clr(uint16_t color)
 {
 	uint32_t index=0;
@@ -175,11 +184,11 @@ void lcd_clr(uint16_t color)
 }	
 
 /**
- *  @Brief  设置鼠标
- *  @param  [in]x 列
- *  @param  [in]y 行
- *  @return None
- */
+  *  @brief  设置鼠标
+  *  @param  [in]x 列
+  *  @param  [in]y 行
+  *  @retval None
+  */
 void lcd_set_cursor(uint16_t x,uint16_t y)
 {
  	lcd_write_reg(0x004e,y);		
@@ -187,10 +196,10 @@ void lcd_set_cursor(uint16_t x,uint16_t y)
 }
 
 /**
- *  @Brief  设置窗口
- *  @param  [in]窗口起始点和结束点位置
- *  @return None
- */
+  *  @brief  设置窗口
+  *  @param  [in]窗口起始点和结束点位置
+  *  @retval None
+  */
 void lcd_set_windows(uint16_t start_x,uint16_t start_y,uint16_t end_x,uint16_t end_y)
 {
 	lcd_set_cursor(start_x, start_y);
@@ -201,11 +210,11 @@ void lcd_set_windows(uint16_t start_x,uint16_t start_y,uint16_t end_x,uint16_t e
 }
 
 /**
- *  @Brief  获取指定像素点的值
- *  @param  [in]x 列
- *  @param  [in]y 行
- *  @return 像素点处的值
- */
+  *  @brief  获取指定像素点的值
+  *  @param  [in]x 列
+  *  @param  [in]y 行
+  *  @retval 像素点处的值
+  */
 uint16_t lcd_get_point(uint16_t x,uint16_t y)
 {
 	lcd_set_cursor(x, y);
@@ -213,12 +222,12 @@ uint16_t lcd_get_point(uint16_t x,uint16_t y)
 }
 
 /**
- *  @Brief  指定像素点赋值
- *  @param  [in]x 列
- *  @param  [in]y 行
- *  @param  [in]value 像素点处的值
- *  @return  None
- */
+  *  @brief  指定像素点赋值
+  *  @param  [in]x 列
+  *  @param  [in]y 行
+  *  @param  [in]value 像素点处的值
+  *  @retval  None
+  */
 void lcd_set_point(uint16_t x, uint16_t y, uint16_t value)
 {
 	lcd_set_cursor(x, y);
@@ -227,13 +236,13 @@ void lcd_set_point(uint16_t x, uint16_t y, uint16_t value)
 }
 
 /**
- *  @Brief  固定窗口显示图片
- *  @Brief  源图为RGB888模式: R8 G8 B8 R8 G8 B8 R8 G8 B8...
- *  @Brief  需转换为:         BGR565 BGR565 BGR565 ...	 
- *  @param  [in]窗口起始点和结束点位置
- *  @param  [in]*picture 图像指针
- *  @return None
- */
+  *  @brief  固定窗口显示图片
+  *  @brief  源图为RGB888模式: R8 G8 B8 R8 G8 B8 R8 G8 B8...
+  *  @brief  需转换为:         BGR565 BGR565 BGR565 ...	 
+  *  @param  [in]窗口起始点和结束点位置
+  *  @param  [in]*picture 图像指针
+  *  @retval None
+  */
 void lcd_draw_picture(uint16_t start_x, uint16_t start_y, uint16_t end_x, uint16_t end_y, uint16_t *picture)
 {
 	uint16_t g_r, r_b, b_g, bgr565;	
@@ -279,14 +288,14 @@ void lcd_draw_picture(uint16_t start_x, uint16_t start_y, uint16_t end_x, uint16
 }
 
 /**
- *  @Brief  8x16字符
- *  @param  [in]x 字符的列坐标
- *  @param  [in]y 字符的行坐标
- *  @param  [in]ch 字符
- *  @param  [in]ch_color 字符颜色
- *  @param  [in]bk_color 背景颜色
- *  @return None
- */
+  *  @brief  8x16字符
+  *  @param  [in]x 字符的列坐标
+  *  @param  [in]y 字符的行坐标
+  *  @param  [in]ch 字符
+  *  @param  [in]ch_color 字符颜色
+  *  @param  [in]bk_color 背景颜色
+  *  @retval None
+  */
 void lcd_putchar_8x16(uint16_t x, uint16_t y, uint8_t ch, uint16_t ch_color, uint16_t bk_color)
 {
 	uint16_t i,j;	
@@ -310,14 +319,14 @@ void lcd_putchar_8x16(uint16_t x, uint16_t y, uint8_t ch, uint16_t ch_color, uin
 } 
 
 /**
- *  @Brief  16x24字符
- *  @param  [in]x 字符的列坐标
- *  @param  [in]y 字符的行坐标
- *  @param  [in]ch 字符
- *  @param  [in]ch_color 字符颜色
- *  @param  [in]bk_color 背景颜色
- *  @return None
- */
+  *  @brief  16x24字符
+  *  @param  [in]x 字符的列坐标
+  *  @param  [in]y 字符的行坐标
+  *  @param  [in]ch 字符
+  *  @param  [in]ch_color 字符颜色
+  *  @param  [in]bk_color 背景颜色
+  *  @retval None
+  */
 void lcd_putchar_16x24(uint16_t x, uint16_t y, uint8_t ch, uint16_t ch_color, uint16_t bk_color)
 {
 	uint16_t i,j;	
@@ -340,12 +349,67 @@ void lcd_putchar_16x24(uint16_t x, uint16_t y, uint8_t ch, uint16_t ch_color, ui
 	}		
 }
 
+/** 以下函数用于移植STemwin时 -----------------------------------*/
+/**
+  *  @brief  写lcd寄存器地址
+  *  @param  dat 寄存器地址
+  *  @retval None
+  */
+void lcd_write_addr(uint16_t dat)
+{
+	lcd_clr_cs();
+	lcd_clr_rs();
+	lcd_clr_wr();
+	GPIO_Write(LCD_DATA_PORT, dat);
+	lcd_set_wr();
+    lcd_set_cs();
+}
 
 /**
- *  @Brief  LCD引脚配置
- *  @param None
- *  @return None
- */
+  *  @brief  写lcd数据
+  *  @param  dat 数据
+  *  @retval None
+  */
+void lcd_write_data(uint16_t dat)
+{
+    lcd_clr_cs();
+	lcd_set_rs();
+	lcd_clr_wr(); 
+	GPIO_Write(LCD_DATA_PORT, dat);
+	lcd_set_wr();
+	lcd_set_cs();
+}
+
+/**
+  *  @brief  读取多个字节数据
+  *  @param  p_dat     数据指针
+  *  @param  num_items 数据长度
+  *  @retval None
+  */
+void lcd_read_data_multiple(uint16_t *p_dat, uint16_t num_items)
+{
+    lcd_data_as_input();
+    lcd_clr_cs();
+	lcd_set_rs();
+	lcd_clr_rd(); 
+	lcd_set_rd();
+    while(num_items--)
+    {
+        *p_dat++ = GPIO_Read(LCD_DATA_PORT); 
+    }
+	lcd_set_cs();
+	lcd_data_as_output();
+}
+
+/** 以上函数用于移植STemwin时  -----------------------------------*/
+
+/** 私有函数 --------------------------------------------------- */
+
+/**
+  *  @brief  LCD引脚配置
+  *  @param None
+  *  @retval None
+  */
 static void lcd_pin_config(void)
 {   /**< 相关时钟已由Cube MX配置完成 */
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -366,10 +430,10 @@ static void lcd_pin_config(void)
 }	
 
 /**
- *  @Brief  写寄存器
- *  @param None
- *  @return None
- */
+  *  @brief  写寄存器
+  *  @param None
+  *  @retval None
+  */
 static void lcd_write_reg(uint16_t reg,uint16_t value)
 {
 	lcd_clr_cs();
@@ -386,10 +450,10 @@ static void lcd_write_reg(uint16_t reg,uint16_t value)
 }
 
 /**
- *  @Brief  准备读写RAM
- *  @param None
- *  @return None
- */
+  *  @brief  准备读写RAM
+  *  @param None
+  *  @retval None
+  */
 static void lcd_ram_prepare(void)
 {
 	lcd_clr_cs();
@@ -401,10 +465,10 @@ static void lcd_ram_prepare(void)
 }
 
 /**
- *  @Brief  写RAM
- *  @param [in]value 写入值
- *  @return None
- */
+  *  @brief  写RAM
+  *  @param [in]value 写入值
+  *  @retval None
+  */
 static void lcd_write_ram(uint16_t value)
 {
 	lcd_clr_cs();
@@ -416,10 +480,10 @@ static void lcd_write_ram(uint16_t value)
 }
 
 /**
- *  @Brief  读RAM
- *  @param  None
- *  @return 读出值
- */
+  *  @brief  读RAM
+  *  @param  None
+  *  @retval 读出值
+  */
 static uint16_t lcd_read_ram(void)
 {
 	uint16_t dummy;
@@ -435,10 +499,10 @@ static uint16_t lcd_read_ram(void)
 }
 
 /**
- *  @Brief  将像素点的BGR格式转换为RGB格式(BBBBBGGGGGGRRRRR -> RRRRRGGGGGGBBBBB)
- *  @param  BGR格式
- *  @return RGB格式
- */
+  *  @brief  将像素点的BGR格式转换为RGB格式(BBBBBGGGGGGRRRRR -> RRRRRGGGGGGBBBBB)
+  *  @param  BGR格式
+  *  @retval RGB格式
+  */
 static uint16_t lcd_bgr2rgb(uint16_t c)
 {
 	uint16_t  b, g, r, rgb;
@@ -454,10 +518,10 @@ static uint16_t lcd_bgr2rgb(uint16_t c)
 
 
 /**
- *  data端口设为输入口
- *  @param None
- *  @return None
- */
+  *  @brief  data端口设为输入口
+  *  @param  None
+  *  @retval None
+  */
 static void lcd_data_as_input(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;  
@@ -469,10 +533,10 @@ static void lcd_data_as_input(void)
 }
 
 /**
- *  @Brief  data端口设为输出口
- *  @param  None
- *  @return None
- */
+  *  @brief  data端口设为输出口
+  *  @param  None
+  *  @retval None
+  */
 static void lcd_data_as_output(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;  
@@ -483,10 +547,10 @@ static void lcd_data_as_output(void)
 }
 
 /**
- *  @Brief  读状态字
- *  @param  None
- *  @return 读出的状态字
- */
+  *  @brief  读状态字
+  *  @param  None
+  *  @retval 读出的状态字
+  */
 static uint16_t lcd_read_sta(void)
 {
 	uint16_t value;
@@ -502,10 +566,10 @@ static uint16_t lcd_read_sta(void)
 }
 
 /**
- *  @Brief  读取端口值
- *  @param  None
- *  @return 读出的状态字
- */
+  *  @brief  读取端口值
+  *  @param  None
+  *  @retval 读出的状态字
+  */
 static uint16_t GPIO_Read(GPIO_TypeDef* GPIOx)
 {
     uint8_t i = 0;
@@ -520,10 +584,10 @@ static uint16_t GPIO_Read(GPIO_TypeDef* GPIOx)
 }
 
 /**
- *  @Brief  给端口赋值
- *  @param  None
- *  @return None
- */
+  *  @brief  给端口赋值
+  *  @param  None
+  *  @retval None
+  */
 static void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
 {
     uint8_t i = 0;
@@ -541,56 +605,4 @@ static void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
     }
 }
 
-/**< For STemwin */
-
-/**
- *  写lcd寄存器地址
- *  @param  dat 寄存器地址
- *  @return None
- */
-void lcd_write_addr(uint16_t dat)
-{
-	lcd_clr_cs();
-	lcd_clr_rs();
-	lcd_clr_wr();
-	GPIO_Write(LCD_DATA_PORT, dat);
-	lcd_set_wr();
-    lcd_set_cs();
-}
-
-/**
- *  写lcd数据
- *  @param  dat 数据
- *  @return None
- */
-void lcd_write_data(uint16_t dat)
-{
-    lcd_clr_cs();
-	lcd_set_rs();
-	lcd_clr_wr(); 
-	GPIO_Write(LCD_DATA_PORT, dat);
-	lcd_set_wr();
-	lcd_set_cs();
-}
-
-/**
- *  读取多个字节数据
- *  @param  p_dat     数据指针
- *  @param  num_items 数据长度
- *  @return None
- */
-void lcd_read_data_multiple(uint16_t *p_dat, uint16_t num_items)
-{
-    lcd_data_as_input();
-    lcd_clr_cs();
-	lcd_set_rs();
-	lcd_clr_rd(); 
-	lcd_set_rd();
-    while(num_items--)
-    {
-        *p_dat++ = GPIO_Read(LCD_DATA_PORT); 
-    }
-	lcd_set_cs();
-	lcd_data_as_output();
-}
 

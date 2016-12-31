@@ -477,14 +477,14 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\objects\startup_stm32f10x_md.d -o.\objects\startup_stm32f10x_md.
-o -IF:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE -IF:\MDK_STM3
-2\MDK_Template\TemplateV1.0_CMSIS_bare\Project\RTE\Device\STM32F103RB -I"C:\My 
-Softwares\MDK_520\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include" -I"C:\My Softwa
-res\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include" -I"C:\My Software
-s\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc" --pred
-efine="__UVISION_VERSION SETA 521" --predefine="_RTE_ SETA 1" --predefine="STM3
-2F10X_MD SETA 1" --list=.\listings\startup_stm32f10x_md.lst RTE\Device\STM32F10
-3RB\startup_stm32f10x_md.s
+o -IF:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\project\RTE\Device\STM32F
+103RB -IF:\MDK_STM32\MDK_Template\TemplateV1.0_CMSIS_bare\project\RTE\_Template
+ -IC:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include -IC:\mySoftware\MDK
+\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include -IC:\mySoftware\MDK\ARM\PACK\
+Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc --predefine="__UVISION_VER
+SION SETA 522" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --l
+ist=.\listings\startup_stm32f10x_md.lst RTE\Device\STM32F103RB\startup_stm32f10
+x_md.s
 
 
 
