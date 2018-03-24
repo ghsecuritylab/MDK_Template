@@ -1,16 +1,16 @@
 /**
- * @file lcd_font.c
- * @brief  lcd_font驱动程序
- * @author 王晓荣
- * @version 
- * @date 2012-10-18
+ * @file        lcd_font.h
+ * @brief       lcd_ssd1289字库 无STemwin下使用
+ * @author      王晓荣
+ * @version     v1.0
+ * @date        2012-10-18
  */
 
 
 #ifndef __LCD_FONT_H
 #define __LCD_FONT_H 	
 
-#include "stm32f1xx_hal.h"
+#include "user_driver_def.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 //字库

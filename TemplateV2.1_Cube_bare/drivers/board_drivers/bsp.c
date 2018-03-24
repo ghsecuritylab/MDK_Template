@@ -27,6 +27,8 @@ static void bsp_printf_info(void);
   */
 void bsp_init(void)
 {
+    /** 串口打印信息 */
+    bsp_printf_info();
     /** STemwin 初始化 */
 //    GUI_Init();
 //    GUI_UC_SetEncodeUTF8();
@@ -35,10 +37,8 @@ void bsp_init(void)
     
     /** board drivers 初始化 */
     
-    /** user drivers 初始化 */
-    
-    /** 串口打印信息 */
-    bsp_printf_info();
+    /** user drivers 初始化 */    
+
 }
 
 /**
@@ -62,9 +62,9 @@ void bsp_init(void)
   */
 static void bsp_printf_info(void)
 {
-    printf("\n\r");
-    printf("Hardware : STM32F107VCT6\n");
-    printf("Software : MDK V5.20\n");
-    printf("Eamil : zbt1314douhao@live.com\n");
+    printf("\r\n");
+    printf("Hardware : STM32F107VCT6\r\n");
+    printf("Software : MDK V5.20\r\n");
+    printf("Eamil : zbt1314douhao@live.com\r\n");
 }
 

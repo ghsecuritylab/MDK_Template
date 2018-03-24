@@ -13,7 +13,9 @@
 #define NUM_KEYS    (sizeof(key) / sizeof(key[0]))
     
 /** 私有变量 --------------------------------------------------- */ 
-/** 配置key用到的端口、引脚 */
+/** 配置key用到的端口、引脚   
+    推荐使用 user_driver_def中的struct gpio 
+*/
 const struct GPIO_KEY key[] = 
 {
     GPIOA, GPIO_PIN_0,

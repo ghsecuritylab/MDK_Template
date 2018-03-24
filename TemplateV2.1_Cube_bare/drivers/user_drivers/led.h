@@ -10,9 +10,11 @@
 #define __LED_H
 
 /** 头文件包含区 ------------------------------------------------ */
-#include "stm32f1xx_hal.h"
+#include "user_driver_def.h"
 
 /** 公有宏(类型定义) -------------------------------------------- */
+typedef struct gpio GPIO_Led;
+
 /** 注：本开发板上仅有4个led */
 #define	LED_0		0x01	
 #define	LED_1		0x02	
@@ -25,11 +27,6 @@
 #define	LED_ALL	    0xFF
 
 /** 枚举、结构体 ------------------------------------------------ */ 
-struct GPIO_LED
-{
-    GPIO_TypeDef      *port;
-    uint16_t          pin;
-};
 
 /** 公有函数原型 ------------------------------------------------ */
 void    led_on(uint16_t val);

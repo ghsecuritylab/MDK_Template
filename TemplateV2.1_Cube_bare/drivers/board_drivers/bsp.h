@@ -10,18 +10,14 @@
 #define __BSP_H
 
 /** 头文件包含区 ------------------------------------------------ */
-#include "stm32f1xx_hal.h"
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-
 /** 以下未用到的外设可以将其头文件注释掉 ------------------------- */
 /** 片上外设驱动头文件 */
 
 
 /** 用户增加的外设头文件 */
-#include "gui.h"            /**< STemwin */
+#include "gui.h"            
 #include "lcd_ssd1289.h"
+
 #include "key.h"
 #include "led.h"
 

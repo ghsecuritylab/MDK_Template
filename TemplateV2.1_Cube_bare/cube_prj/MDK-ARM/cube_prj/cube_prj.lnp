@@ -25,6 +25,7 @@
 "cube_prj\lcd_ssd1289.o"
 "cube_prj\led.o"
 "cube_prj\bsp.o"
+"cube_prj\uart_printf.o"
 "cube_prj\guiconf.o"
 "cube_prj\lcdconf_flexcolor_template.o"
 "..\..\STemWinLibrary522\Lib\STemWin522_CM3_Keil.lib"

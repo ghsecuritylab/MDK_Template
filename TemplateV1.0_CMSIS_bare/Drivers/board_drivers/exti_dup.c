@@ -24,11 +24,10 @@
 /* Private function prototypes -----------------------------------------------*/
 
 
-
 /**
   *  @brief  初始化外部中断
   *  @param  None
-  *  @retval None
+  *  @retval None	
   */
 void EXTIx_Init(void)
 {
@@ -90,5 +89,5 @@ void EXTI9_5_IRQHandler(void)
         LED_Off(GPIO_LED, GPIO_LED_All);
     }
     
-    EXTI_ClearITPendingBit(EXTI_Line6);             /**< 清楚线路6中断挂起位 */
+    EXTI_ClearITPendingBit(EXTI_Line6);             /**< 清除线路6中断挂起位 */
 }

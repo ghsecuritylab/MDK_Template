@@ -10,16 +10,16 @@
 #include "bsp.h"
 
 /** 私有宏(类型定义) -------------------------------------------- */ 
-#define NUM_LEDS (sizeof(led) / sizeof(led[0]))
+#define NUM_LEDS (sizeof(Led) / sizeof(Led[0]))
     
 /** 私有变量 --------------------------------------------------- */
 /** 配置led用到的端口、引脚 */
-const struct GPIO_LED led[] =
+const GPIO_Led Led[] =
 {
-    GPIOD, GPIO_PIN_2,
-    GPIOD, GPIO_PIN_3,
-    GPIOD, GPIO_PIN_4,
-    GPIOD, GPIO_PIN_7,
+    {GPIOD, {GPIO_PIN_2, GPIO_MODE_OUTPUT_PP, .Speed = GPIO_SPEED_FREQ_LOW}},
+    {GPIOD, {GPIO_PIN_3, GPIO_MODE_OUTPUT_PP, .Speed = GPIO_SPEED_FREQ_LOW}},
+    {GPIOD, {GPIO_PIN_4, GPIO_MODE_OUTPUT_PP, .Speed = GPIO_SPEED_FREQ_LOW}},
+    {GPIOD, {GPIO_PIN_7, GPIO_MODE_OUTPUT_PP, .Speed = GPIO_SPEED_FREQ_LOW}},
 };
 
 /** 外部变量 --------------------------------------------------- */
@@ -42,7 +42,7 @@ void led_on(uint16_t val)
     {
         if (val & (1 << n)) 
         {
-            HAL_GPIO_WritePin(led[n].port, led[n].pin, GPIO_PIN_SET);        
+            HAL_GPIO_WritePin(Led[n].Port, Led[n].Init.Pin, GPIO_PIN_SET);        
         }        
     }    
 }
@@ -61,7 +61,7 @@ void led_off(uint16_t val)
     {
         if (val & (1 << n)) 
         {
-            HAL_GPIO_WritePin(led[n].port, led[n].pin, GPIO_PIN_RESET);        
+            HAL_GPIO_WritePin(Led[n].Port, Led[n].Init.Pin, GPIO_PIN_RESET);        
         }        
     }     
 }
