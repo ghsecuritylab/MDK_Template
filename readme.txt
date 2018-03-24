@@ -1,0 +1,3 @@
+
+优先使用版本号更高的模板
+推荐使用 TemplateV2.0_Cube_bare
