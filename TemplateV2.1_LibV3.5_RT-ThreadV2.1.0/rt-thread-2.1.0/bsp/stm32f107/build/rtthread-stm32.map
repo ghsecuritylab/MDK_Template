@@ -1,0 +1,1336 @@
+Component: ARM Compiler 5.06 update 1 (build 61) Tool: armlink [4d35a8]
+
+==============================================================================
+
+Section Cross References
+
+    application.o(.text) refers to platform.o(.text) for rt_platform_init
+    application.o(.text) refers to dfs.o(.text) for dfs_init
+    application.o(.text) refers to dfs_elm.o(.text) for elm_init
+    application.o(.text) refers to dfs_fs.o(.text) for dfs_mount
+    application.o(.text) refers to kservice.o(.text) for rt_kprintf
+    application.o(.text) refers to ethernetif.o(.text) for eth_system_device_init
+    application.o(.text) refers to sys_arch.o(.text) for lwip_system_init
+    application.o(.text) refers to shell.o(.text) for finsh_system_init
+    application.o(.text) refers to thread.o(.text) for rt_thread_create
+    startup.o(.text) refers to kservice.o(.text) for rt_kprintf
+    startup.o(.text) refers to board.o(.text) for rt_hw_board_init
+    startup.o(.text) refers to clock.o(.text) for rt_system_tick_init
+    startup.o(.text) refers to object.o(.text) for rt_system_object_init
+    startup.o(.text) refers to timer.o(.text) for rt_system_timer_init
+    startup.o(.text) refers to mem.o(.text) for rt_system_heap_init
+    startup.o(.text) refers to scheduler.o(.text) for rt_system_scheduler_init
+    startup.o(.text) refers to application.o(.text) for rt_application_init
+    startup.o(.text) refers to idle.o(.text) for rt_thread_idle_init
+    startup.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    board.o(.text) refers to misc.o(.text) for NVIC_SetVectorTable
+    board.o(.text) refers to irq.o(.text) for rt_interrupt_enter
+    board.o(.text) refers to clock.o(.text) for rt_tick_increase
+    board.o(.text) refers to usart.o(.text) for rt_hw_usart_init
+    board.o(.text) refers to kservice.o(.text) for rt_console_set_device
+    board.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    msd.o(.text) refers to ipc.o(.text) for rt_mutex_take
+    msd.o(.text) refers to clock.o(.text) for rt_tick_get
+    msd.o(.text) refers to kservice.o(.text) for rt_memset
+    msd.o(.text) refers to spi_core.o(.text) for rt_spi_configure
+    msd.o(.text) refers to aeabi_memset.o(.text) for __aeabi_memset
+    msd.o(.text) refers to device.o(.text) for rt_device_find
+    msd.o(.text) refers to msd.o(.constdata) for .constdata
+    msd.o(.text) refers to msd.o(.bss) for .bss
+    platform.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    platform.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    platform.o(.text) refers to thread.o(.text) for rt_thread_delay
+    platform.o(.text) refers to msd.o(.text) for msd_init
+    platform.o(.text) refers to stm32_eth.o(.text) for rt_hw_stm32_eth_init
+    platform.o(.text) refers to rt_stm32f10x_spi.o(.text) for stm32_spi_register
+    platform.o(.text) refers to spi_core.o(.text) for rt_spi_bus_attach_device
+    platform.o(.text) refers to platform.o(.bss) for .bss
+    platform.o(.text) refers to platform.o(.data) for .data
+    rt_stm32f10x_spi.o(.text) refers to stm32f10x_spi.o(.text) for SPI_StructInit
+    rt_stm32f10x_spi.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_ResetBits
+    rt_stm32f10x_spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    rt_stm32f10x_spi.o(.text) refers to spi_core.o(.text) for rt_spi_bus_register
+    rt_stm32f10x_spi.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    rt_stm32f10x_spi.o(.text) refers to rt_stm32f10x_spi.o(.data) for .data
+    rt_stm32f10x_spi.o(.data) refers to rt_stm32f10x_spi.o(.text) for configure
+    serial.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    serial.o(.text) refers to mem.o(.text) for rt_malloc
+    serial.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    serial.o(.text) refers to serial.o(.constdata) for .constdata
+    serial.o(.text) refers to device.o(.text) for rt_device_register
+    stm32_eth.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_AHBPeriphResetCmd
+    stm32_eth.o(.text) refers to startup.o(.text) for assert_failed
+    stm32_eth.o(.text) refers to stm32_eth.o(.data) for .data
+    stm32_eth.o(.text) refers to irq.o(.text) for rt_interrupt_enter
+    stm32_eth.o(.text) refers to ethernetif.o(.text) for eth_device_ready
+    stm32_eth.o(.text) refers to ipc.o(.text) for rt_sem_release
+    stm32_eth.o(.text) refers to kservice.o(.text) for rt_set_errno
+    stm32_eth.o(.text) refers to def.o(.text) for lwip_htons
+    stm32_eth.o(.text) refers to stm32_eth.o(.bss) for .bss
+    stm32_eth.o(.text) refers to pbuf.o(.text) for pbuf_alloc
+    stm32_eth.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    stm32_eth.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_PinRemapConfig
+    stm32_eth.o(.text) refers to misc.o(.text) for NVIC_Init
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_search_name
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_search_desc
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.text) for phy_search
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_dump_name
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_dump_desc
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.text) for phy_dump
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_write_name
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_phy_write_desc
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.text) for phy_write
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_emac_dump_name
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.rodata.name) for __fsym_emac_dump_desc
+    stm32_eth.o(FSymTab) refers to stm32_eth.o(.text) for emac_dump
+    usart.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    usart.o(.text) refers to stm32f10x_usart.o(.text) for USART_Init
+    usart.o(.text) refers to irq.o(.text) for rt_interrupt_enter
+    usart.o(.text) refers to serial.o(.text) for rt_hw_serial_isr
+    usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    usart.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    usart.o(.text) refers to misc.o(.text) for NVIC_Init
+    usart.o(.text) refers to usart.o(.constdata) for .constdata
+    usart.o(.text) refers to usart.o(.data) for .data
+    usart.o(.text) refers to usart.o(.bss) for .bss
+    usart.o(.constdata) refers to usart.o(.text) for stm32_configure
+    system_stm32f10x.o(.text) refers to system_stm32f10x.o(.data) for .data
+    stm32f10x_rcc.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_rcc.o(.text) refers to stm32f10x_rcc.o(.data) for .data
+    stm32f10x_wwdg.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_wwdg.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_pwr.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_pwr.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_exti.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_bkp.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_BackupResetCmd
+    stm32f10x_bkp.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_i2c.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_i2c.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_adc.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_adc.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_dac.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_dac.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_rtc.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_fsmc.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_tim.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_tim.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_iwdg.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_spi.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_flash.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_sdio.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_gpio.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_gpio.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_usart.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_dbgmcu.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_dma.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_can.o(.text) refers to startup.o(.text) for assert_failed
+    stm32f10x_can.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_cec.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_cec.o(.text) refers to startup.o(.text) for assert_failed
+    misc.o(.text) refers to startup.o(.text) for assert_failed
+    startup_stm32f10x_cl.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_cl.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_cl.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_cl.o(RESET) refers to startup_stm32f10x_cl.o(STACK) for __initial_sp
+    startup_stm32f10x_cl.o(RESET) refers to startup_stm32f10x_cl.o(.text) for Reset_Handler
+    startup_stm32f10x_cl.o(RESET) refers to stm32f10x_it.o(.text) for NMI_Handler
+    startup_stm32f10x_cl.o(RESET) refers to context_rvds.o(.text) for HardFault_Handler
+    startup_stm32f10x_cl.o(RESET) refers to board.o(.text) for SysTick_Handler
+    startup_stm32f10x_cl.o(RESET) refers to usart.o(.text) for USART1_IRQHandler
+    startup_stm32f10x_cl.o(RESET) refers to stm32_eth.o(.text) for ETH_IRQHandler
+    startup_stm32f10x_cl.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_cl.o(.text) refers to system_stm32f10x.o(.text) for SystemInit
+    startup_stm32f10x_cl.o(.text) refers to __main.o(!!!main) for __main
+    startup_stm32f10x_cl.o(.text) refers to startup_stm32f10x_cl.o(HEAP) for Heap_Mem
+    startup_stm32f10x_cl.o(.text) refers to startup_stm32f10x_cl.o(STACK) for Stack_Mem
+    clock.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    clock.o(.text) refers to thread.o(.text) for rt_thread_self
+    clock.o(.text) refers to timer.o(.text) for rt_timer_check
+    clock.o(.text) refers to clock.o(.data) for .data
+    device.o(.text) refers to thread.o(.text) for rt_thread_self
+    device.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    device.o(.text) refers to kservice.o(.text) for rt_strncmp
+    device.o(.text) refers to object.o(.text) for rt_object_init
+    device.o(.text) refers to object.o(.data) for rt_object_container
+    device.o(.text) refers to device.o(.constdata) for .constdata
+    idle.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    idle.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    idle.o(.text) refers to kservice.o(.text) for rt_kprintf
+    idle.o(.text) refers to object.o(.text) for rt_object_is_systemobject
+    idle.o(.text) refers to mem.o(.text) for rt_free
+    idle.o(.text) refers to thread.o(.text) for rt_thread_init
+    idle.o(.text) refers to idle.o(.data) for .data
+    idle.o(.text) refers to idle.o(.constdata) for .constdata
+    idle.o(.text) refers to scheduler.o(.data) for rt_thread_defunct
+    idle.o(.text) refers to idle.o(.bss) for .bss
+    ipc.o(.text) refers to thread.o(.text) for rt_thread_suspend
+    ipc.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    ipc.o(.text) refers to object.o(.text) for rt_object_init
+    ipc.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    ipc.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    ipc.o(.text) refers to timer.o(.text) for rt_timer_control
+    ipc.o(.text) refers to scheduler.o(.text) for rt_schedule
+    ipc.o(.text) refers to ipc.o(.constdata) for .constdata
+    ipc.o(.text) refers to object.o(.data) for rt_object_trytake_hook
+    ipc.o(.text) refers to mem.o(.text) for rt_malloc
+    ipc.o(.text) refers to clock.o(.text) for rt_tick_get
+    irq.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    irq.o(.text) refers to irq.o(.data) for .data
+    kservice.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    kservice.o(.text) refers to thread.o(.text) for rt_thread_self
+    kservice.o(.text) refers to mem.o(.text) for rt_malloc
+    kservice.o(.text) refers to kservice.o(.data) for .data
+    kservice.o(.text) refers to kservice.o(.constdata) for .constdata
+    kservice.o(.text) refers to device.o(.text) for rt_device_write
+    kservice.o(.text) refers to kservice.o(.bss) for .bss
+    mem.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    mem.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    mem.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    mem.o(.text) refers to ipc.o(.text) for rt_sem_init
+    mem.o(.text) refers to mem.o(.data) for .data
+    mem.o(.text) refers to mem.o(.constdata) for .constdata
+    mem.o(.text) refers to mem.o(.bss) for .bss
+    mem.o(.text) refers to mem.o(.conststring) for .conststring
+    mem.o(FSymTab) refers to mem.o(.rodata.name) for __fsym_list_mem_name
+    mem.o(FSymTab) refers to mem.o(.rodata.name) for __fsym_list_mem_desc
+    mem.o(FSymTab) refers to mem.o(.text) for list_mem
+    mempool.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    mempool.o(.text) refers to object.o(.text) for rt_object_init
+    mempool.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    mempool.o(.text) refers to thread.o(.text) for rt_thread_resume
+    mempool.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    mempool.o(.text) refers to mem.o(.text) for rt_malloc
+    mempool.o(.text) refers to clock.o(.text) for rt_tick_get
+    mempool.o(.text) refers to timer.o(.text) for rt_timer_control
+    mempool.o(.text) refers to scheduler.o(.text) for rt_schedule
+    mempool.o(.text) refers to mempool.o(.data) for .data
+    mempool.o(.text) refers to mempool.o(.constdata) for .constdata
+    object.o(.text) refers to kservice.o(.text) for rt_strncpy
+    object.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    object.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    object.o(.text) refers to mem.o(.text) for rt_malloc
+    object.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    object.o(.text) refers to object.o(.data) for .data
+    object.o(.text) refers to object.o(.constdata) for .constdata
+    scheduler.o(.text) refers to kservice.o(.text) for __rt_ffs
+    scheduler.o(.text) refers to context_rvds.o(.text) for rt_hw_context_switch_to
+    scheduler.o(.text) refers to cmd.o(.text) for list_thread
+    scheduler.o(.text) refers to scheduler.o(.data) for .data
+    scheduler.o(.text) refers to scheduler.o(.bss) for .bss
+    scheduler.o(.text) refers to irq.o(.data) for rt_interrupt_nest
+    scheduler.o(.text) refers to scheduler.o(.constdata) for .constdata
+    thread.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    thread.o(.text) refers to scheduler.o(.text) for rt_schedule_remove_thread
+    thread.o(.text) refers to timer.o(.text) for rt_timer_detach
+    thread.o(.text) refers to object.o(.text) for rt_object_is_systemobject
+    thread.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    thread.o(.text) refers to cpuport.o(.text) for rt_hw_stack_init
+    thread.o(.text) refers to mem.o(.text) for rt_malloc
+    thread.o(.text) refers to scheduler.o(.data) for rt_current_thread
+    thread.o(.text) refers to thread.o(.constdata) for .constdata
+    thread.o(.text) refers to scheduler.o(.bss) for rt_thread_priority_table
+    thread.o(.text) refers to object.o(.data) for rt_object_container
+    timer.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    timer.o(.text) refers to object.o(.text) for rt_object_init
+    timer.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    timer.o(.text) refers to clock.o(.text) for rt_tick_get
+    timer.o(.text) refers to timer.o(.data) for .data
+    timer.o(.text) refers to timer.o(.constdata) for .constdata
+    timer.o(.text) refers to object.o(.data) for rt_object_take_hook
+    cpuport.o(.text) refers to kservice.o(.text) for rt_kprintf
+    cpuport.o(.text) refers to thread.o(.text) for rt_thread_self
+    cpuport.o(.text) refers to cmd.o(.text) for list_thread
+    cpuport.o(.text) refers to cpuport.o(.data) for .data
+    cpuport.o(.text) refers to cpuport.o(.constdata) for .constdata
+    context_rvds.o(.text) refers to cpuport.o(.text) for rt_hw_hard_fault_exception
+    context_rvds.o(.text) refers to cpuport.o(.data) for rt_thread_switch_interrupt_flag
+    context_rvds.o(.text) refers to cpuport.o(.data) for rt_interrupt_from_thread
+    context_rvds.o(.text) refers to cpuport.o(.data) for rt_interrupt_to_thread
+    showmem.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    showmem.o(.text) refers to showmem.o(.constdata) for .constdata
+    dfs.o(.text) refers to kservice.o(.text) for rt_memset
+    dfs.o(.text) refers to ipc.o(.text) for rt_mutex_init
+    dfs.o(.text) refers to strlen.o(.text) for strlen
+    dfs.o(.text) refers to mem.o(.text) for rt_malloc
+    dfs.o(.text) refers to dfs_fs.o(.text) for dfs_filesystem_lookup
+    dfs.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    dfs.o(.text) refers to dfs.o(.bss) for .bss
+    dfs.o(.text) refers to dfs.o(.constdata) for .constdata
+    dfs_fs.o(.text) refers to dfs.o(.text) for dfs_lock
+    dfs_fs.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    dfs_fs.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    dfs_fs.o(.text) refers to strlen.o(.text) for strlen
+    dfs_fs.o(.text) refers to strncmp.o(.text) for strncmp
+    dfs_fs.o(.text) refers to device.o(.text) for rt_device_find
+    dfs_fs.o(.text) refers to dfs_file.o(.text) for dfs_file_open
+    dfs_fs.o(.text) refers to mem.o(.text) for rt_free
+    dfs_fs.o(.text) refers to dfs.o(.bss) for filesystem_operation_table
+    dfs_fs.o(.text) refers to dfs_fs.o(.constdata) for .constdata
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.rodata.name) for __fsym_mkfs_name
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.rodata.name) for __fsym_mkfs_desc
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.text) for mkfs
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.rodata.name) for __fsym_df_name
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.rodata.name) for __fsym_df_desc
+    dfs_fs.o(FSymTab) refers to dfs_fs.o(.text) for df
+    dfs_file.o(.text) refers to dfs.o(.text) for dfs_normalize_path
+    dfs_file.o(.text) refers to dfs_fs.o(.text) for dfs_filesystem_lookup
+    dfs_file.o(.text) refers to mem.o(.text) for rt_free
+    dfs_file.o(.text) refers to kservice.o(.text) for rt_strdup
+    dfs_file.o(.text) refers to dfs_file.o(.bss) for .bss
+    dfs_file.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    dfs_file.o(.text) refers to dfs_posix.o(.text) for mkdir
+    dfs_file.o(.text) refers to strrchr.o(.text) for strrchr
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_ls_name
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_ls_desc
+    dfs_file.o(FSymTab) refers to dfs_file.o(.text) for ls
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_rm_name
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_rm_desc
+    dfs_file.o(FSymTab) refers to dfs_file.o(.text) for rm
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_cat_name
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_cat_desc
+    dfs_file.o(FSymTab) refers to dfs_file.o(.text) for cat
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_copy_name
+    dfs_file.o(FSymTab) refers to dfs_file.o(.rodata.name) for __fsym_copy_desc
+    dfs_file.o(FSymTab) refers to dfs_file.o(.text) for copy
+    dfs_posix.o(.text) refers to dfs.o(.text) for fd_new
+    dfs_posix.o(.text) refers to dfs_file.o(.text) for dfs_file_open
+    dfs_posix.o(.text) refers to kservice.o(.text) for rt_set_errno
+    dfs_posix.o(.text) refers to dfs_fs.o(.text) for dfs_statfs
+    dfs_posix.o(.text) refers to mem.o(.text) for rt_malloc
+    dfs_posix.o(FSymTab) refers to dfs_posix.o(.rodata.name) for __fsym_mkdir_name
+    dfs_posix.o(FSymTab) refers to dfs_posix.o(.rodata.name) for __fsym_mkdir_desc
+    dfs_posix.o(FSymTab) refers to dfs_posix.o(.text) for mkdir
+    dfs_elm.o(.text) refers to device.o(.text) for rt_device_control
+    dfs_elm.o(.text) refers to kservice.o(.text) for rt_kprintf
+    dfs_elm.o(.text) refers to mem.o(.text) for rt_malloc
+    dfs_elm.o(.text) refers to ff.o(.text) for f_mount
+    dfs_elm.o(.text) refers to dfs_elm.o(.data) for .data
+    dfs_elm.o(.text) refers to dfs_elm.o(.conststring) for .conststring
+    dfs_elm.o(.text) refers to dfs_elm.o(.constdata) for .constdata
+    dfs_elm.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    dfs_elm.o(.text) refers to mktime.o(.text) for mktime
+    dfs_elm.o(.text) refers to dfs_fs.o(.text) for dfs_register
+    dfs_elm.o(.text) refers to ipc.o(.text) for rt_mutex_create
+    dfs_elm.o(.constdata) refers to dfs_elm.o(.conststring) for .conststring
+    dfs_elm.o(.constdata) refers to dfs_elm.o(.text) for dfs_elm_mount
+    ff.o(.text) refers to dfs_elm.o(.text) for disk_write
+    ff.o(.text) refers to ff.o(.data) for .data
+    ff.o(.text) refers to ff.o(.constdata) for .constdata
+    spi_core.o(.text) refers to spi_dev.o(.text) for rt_spi_bus_device_init
+    spi_core.o(.text) refers to ipc.o(.text) for rt_mutex_init
+    spi_core.o(.text) refers to device.o(.text) for rt_device_find
+    spi_core.o(.text) refers to kservice.o(.text) for rt_memset
+    spi_core.o(.text) refers to spi_core.o(.constdata) for .constdata
+    spi_dev.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    spi_dev.o(.text) refers to spi_core.o(.text) for rt_spi_transfer
+    spi_dev.o(.text) refers to device.o(.text) for rt_device_register
+    spi_dev.o(.text) refers to spi_dev.o(.constdata) for .constdata
+    shell.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    shell.o(.text) refers to ipc.o(.text) for rt_sem_release
+    shell.o(.text) refers to device.o(.text) for rt_device_find
+    shell.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    shell.o(.text) refers to finsh_parser.o(.text) for finsh_parser_run
+    shell.o(.text) refers to finsh_error.o(.text) for finsh_errno
+    shell.o(.text) refers to finsh_compiler.o(.text) for finsh_compiler_run
+    shell.o(.text) refers to finsh_vm.o(.text) for finsh_vm_run
+    shell.o(.text) refers to finsh_init.o(.text) for finsh_stack_bottom
+    shell.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    shell.o(.text) refers to strlen.o(.text) for strlen
+    shell.o(.text) refers to cmd.o(.text) for list_prefix
+    shell.o(.text) refers to shell.o(.data) for .data
+    shell.o(.text) refers to shell.o(.constdata) for .constdata
+    shell.o(.text) refers to mem.o(.text) for rt_malloc
+    shell.o(.text) refers to thread.o(.text) for rt_thread_init
+    shell.o(.text) refers to rt_memclr.o(.text) for __aeabi_memclr
+    shell.o(.text) refers to symbol.o(.data) for _syscall_table_begin
+    shell.o(.text) refers to symbol.o(.data) for _syscall_table_end
+    shell.o(.text) refers to symbol.o(.data) for _sysvar_table_begin
+    shell.o(.text) refers to symbol.o(.data) for _sysvar_table_end
+    shell.o(.text) refers to shell.o(.bss) for .bss
+    cmd.o(.text) refers to kservice.o(.text) for rt_kprintf
+    cmd.o(.text) refers to strncmp.o(.text) for strncmp
+    cmd.o(.text) refers to strlen.o(.text) for strlen
+    cmd.o(.text) refers to cmd.o(.conststring) for .conststring
+    cmd.o(.text) refers to object.o(.data) for rt_object_container
+    cmd.o(.text) refers to symbol.o(.data) for _syscall_table_begin
+    cmd.o(.text) refers to symbol.o(.data) for _syscall_table_end
+    cmd.o(.text) refers to finsh_vm.o(.data) for global_syscall_list
+    cmd.o(.text) refers to symbol.o(.data) for _sysvar_table_begin
+    cmd.o(.text) refers to symbol.o(.data) for _sysvar_table_end
+    cmd.o(.text) refers to finsh_var.o(.data) for global_sysvar_list
+    cmd.o(.text) refers to clock.o(.text) for rt_tick_get
+    cmd.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    cmd.o(.text) refers to cmd.o(.constdata) for .constdata
+    cmd.o(.constdata) refers to cmd.o(.conststring) for .conststring
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_hello_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_hello_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for hello
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_version_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_version_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for version
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_thread_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_thread_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_thread
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_sem_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_sem_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_sem
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_event_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_event_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_event
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mutex_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mutex_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_mutex
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mailbox_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mailbox_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_mailbox
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_msgqueue_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_msgqueue_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_msgqueue
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mempool_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_mempool_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_mempool
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_timer_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_timer_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_timer
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_device_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_device_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list_device
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_name
+    cmd.o(FSymTab) refers to cmd.o(.rodata.name) for __fsym_list_desc
+    cmd.o(FSymTab) refers to cmd.o(.text) for list
+    cmd.o(VSymTab) refers to cmd.o(.rodata.name) for __vsym_dummy_name
+    cmd.o(VSymTab) refers to cmd.o(.rodata.name) for __vsym_dummy_desc
+    cmd.o(VSymTab) refers to cmd.o(.data) for dummy
+    finsh_compiler.o(.text) refers to finsh_error.o(.text) for finsh_error_set
+    finsh_compiler.o(.text) refers to rt_memclr.o(.text) for __aeabi_memclr
+    finsh_compiler.o(.text) refers to finsh_compiler.o(.data) for .data
+    finsh_compiler.o(.text) refers to finsh_vm.o(.bss) for text_segment
+    finsh_error.o(.text) refers to finsh_error.o(.data) for .data
+    finsh_error.o(.data) refers to finsh_error.o(.conststring) for .conststring
+    finsh_heap.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    finsh_heap.o(.text) refers to finsh_heap.o(.bss) for .bss
+    finsh_heap.o(.text) refers to finsh_heap.o(.data) for .data
+    finsh_heap.o(.text) refers to finsh_var.o(.bss) for global_variable
+    finsh_init.o(.text) refers to finsh_parser.o(.text) for finsh_parser_init
+    finsh_init.o(.text) refers to finsh_node.o(.text) for finsh_node_init
+    finsh_init.o(.text) refers to finsh_var.o(.text) for finsh_var_init
+    finsh_init.o(.text) refers to finsh_error.o(.text) for finsh_error_init
+    finsh_init.o(.text) refers to finsh_heap.o(.text) for finsh_heap_init
+    finsh_init.o(.text) refers to finsh_vm.o(.bss) for finsh_vm_stack
+    finsh_node.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    finsh_node.o(.text) refers to finsh_var.o(.text) for finsh_var_lookup
+    finsh_node.o(.text) refers to finsh_vm.o(.text) for finsh_syscall_lookup
+    finsh_node.o(.text) refers to finsh_error.o(.text) for finsh_error_set
+    finsh_node.o(.text) refers to strlen.o(.text) for strlen
+    finsh_node.o(.text) refers to finsh_heap.o(.text) for finsh_heap_allocate
+    finsh_node.o(.text) refers to strncpy.o(.text) for strncpy
+    finsh_node.o(.text) refers to finsh_node.o(.bss) for .bss
+    finsh_ops.o(.text) refers to finsh_vm.o(.data) for finsh_sp
+    finsh_ops.o(.constdata) refers to finsh_ops.o(.text) for OP_no_op
+    finsh_parser.o(.text) refers to finsh_token.o(.text) for finsh_token_token
+    finsh_parser.o(.text) refers to finsh_node.o(.text) for finsh_node_new_long
+    finsh_parser.o(.text) refers to finsh_error.o(.text) for finsh_error_set
+    finsh_parser.o(.text) refers to finsh_var.o(.text) for finsh_var_insert
+    finsh_parser.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    finsh_parser.o(.text) refers to strncpy.o(.text) for strncpy
+    finsh_var.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    finsh_var.o(.text) refers to strncmp.o(.text) for strncmp
+    finsh_var.o(.text) refers to strncpy.o(.text) for strncpy
+    finsh_var.o(.text) refers to mem.o(.text) for rt_malloc
+    finsh_var.o(.text) refers to kservice.o(.text) for rt_strdup
+    finsh_var.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    finsh_var.o(.text) refers to strlen.o(.text) for strlen
+    finsh_var.o(.text) refers to finsh_var.o(.bss) for .bss
+    finsh_var.o(.text) refers to finsh_var.o(.data) for .data
+    finsh_var.o(.text) refers to symbol.o(.data) for _sysvar_table_begin
+    finsh_var.o(.text) refers to symbol.o(.data) for _sysvar_table_end
+    finsh_vm.o(.text) refers to mem.o(.text) for rt_malloc
+    finsh_vm.o(.text) refers to kservice.o(.text) for rt_strdup
+    finsh_vm.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    finsh_vm.o(.text) refers to strlen.o(.text) for strlen
+    finsh_vm.o(.text) refers to strncmp.o(.text) for strncmp
+    finsh_vm.o(.text) refers to finsh_vm.o(.bss) for .bss
+    finsh_vm.o(.text) refers to finsh_vm.o(.data) for .data
+    finsh_vm.o(.text) refers to finsh_ops.o(.constdata) for op_table
+    finsh_vm.o(.text) refers to symbol.o(.data) for _syscall_table_begin
+    finsh_vm.o(.text) refers to symbol.o(.data) for _syscall_table_end
+    finsh_token.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    finsh_token.o(.text) refers to strlen.o(.text) for strlen
+    finsh_token.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    finsh_token.o(.text) refers to finsh_error.o(.text) for finsh_error_set
+    finsh_token.o(.text) refers to strncpy.o(.text) for strncpy
+    finsh_token.o(.text) refers to atoi.o(.text) for atoi
+    finsh_token.o(.text) refers to finsh_token.o(.constdata) for .constdata
+    finsh_token.o(.constdata) refers to finsh_token.o(.conststring) for .conststring
+    api_lib.o(.text) refers to api_msg.o(.text) for netconn_alloc
+    api_lib.o(.text) refers to tcpip.o(.text) for tcpip_apimsg
+    api_lib.o(.text) refers to kservice.o(.text) for rt_kprintf
+    api_lib.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    api_lib.o(.text) refers to mem.o(.text) for rt_free
+    api_lib.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    api_lib.o(.text) refers to memp.o(.constdata) for memp_sizes
+    api_msg.o(.text) refers to sys_arch.o(.text) for sys_mbox_valid
+    api_msg.o(.text) refers to pbuf.o(.text) for pbuf_alloc
+    api_msg.o(.text) refers to mem.o(.text) for rt_malloc
+    api_msg.o(.text) refers to netbuf.o(.text) for netbuf_delete
+    api_msg.o(.text) refers to kservice.o(.text) for rt_kprintf
+    api_msg.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    api_msg.o(.text) refers to tcp.o(.text) for tcp_recved
+    api_msg.o(.text) refers to tcp_out.o(.text) for tcp_write
+    api_msg.o(.text) refers to memp.o(.constdata) for memp_sizes
+    api_msg.o(.text) refers to ip.o(.data) for current_iphdr_src
+    api_msg.o(.text) refers to raw.o(.text) for raw_new
+    api_msg.o(.text) refers to udp.o(.text) for udp_new
+    api_msg.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    api_msg.o(.text) refers to dns.o(.text) for dns_gethostbyname
+    netbuf.o(.text) refers to mem.o(.text) for rt_malloc
+    netbuf.o(.text) refers to pbuf.o(.text) for pbuf_free
+    netbuf.o(.text) refers to kservice.o(.text) for rt_kprintf
+    netbuf.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    netbuf.o(.text) refers to memp.o(.constdata) for memp_sizes
+    netdb.o(.text) refers to api_lib.o(.text) for netconn_gethostbyname
+    netdb.o(.text) refers to strlen.o(.text) for strlen
+    netdb.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    netdb.o(.text) refers to mem.o(.text) for rt_free
+    netdb.o(.text) refers to atoi.o(.text) for atoi
+    netdb.o(.text) refers to kservice.o(.text) for rt_kprintf
+    netdb.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    netdb.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    netdb.o(.text) refers to def.o(.text) for lwip_htons
+    netdb.o(.text) refers to netdb.o(.data) for .data
+    netdb.o(.text) refers to netdb.o(.bss) for .bss
+    netdb.o(.text) refers to memp.o(.constdata) for memp_sizes
+    netifapi.o(.text) refers to netif.o(.text) for netif_add
+    netifapi.o(.text) refers to sys_arch.o(.text) for sys_sem_signal
+    netifapi.o(.text) refers to tcpip.o(.text) for tcpip_netifapi
+    sockets.o(.text) refers to kservice.o(.text) for _rt_errno
+    sockets.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    sockets.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    sockets.o(.text) refers to api_lib.o(.text) for netconn_accept
+    sockets.o(.text) refers to def.o(.text) for lwip_htons
+    sockets.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    sockets.o(.text) refers to pbuf.o(.text) for pbuf_free
+    sockets.o(.text) refers to sockets.o(.bss) for .bss
+    sockets.o(.text) refers to sockets.o(.data) for .data
+    sockets.o(.text) refers to sockets.o(.constdata) for .constdata
+    sockets.o(.text) refers to netbuf.o(.text) for netbuf_delete
+    sockets.o(.text) refers to tcpip.o(.text) for tcpip_callback_with_block
+    tcpip.o(.text) refers to timers.o(.text) for sys_timeouts_mbox_fetch
+    tcpip.o(.text) refers to etharp.o(.text) for ethernet_input
+    tcpip.o(.text) refers to ip.o(.text) for ip_input
+    tcpip.o(.text) refers to mem.o(.text) for rt_free
+    tcpip.o(.text) refers to kservice.o(.text) for rt_kprintf
+    tcpip.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    tcpip.o(.text) refers to init.o(.text) for lwip_init
+    tcpip.o(.text) refers to pbuf.o(.text) for pbuf_free
+    tcpip.o(.text) refers to tcpip.o(.data) for .data
+    tcpip.o(.text) refers to memp.o(.constdata) for memp_sizes
+    sys_arch.o(.text) refers to device.o(.text) for rt_device_init
+    sys_arch.o(.text) refers to thread.o(.text) for rt_thread_self
+    sys_arch.o(.text) refers to kservice.o(.text) for rt_kprintf
+    sys_arch.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    sys_arch.o(.text) refers to netif.o(.text) for netif_add
+    sys_arch.o(.text) refers to ipc.o(.text) for rt_sem_release
+    sys_arch.o(.text) refers to tcpip.o(.text) for tcpip_init
+    sys_arch.o(.text) refers to netifapi.o(.text) for netifapi_netif_set_addr
+    sys_arch.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    sys_arch.o(.text) refers to irq.o(.text) for rt_interrupt_get_nest
+    sys_arch.o(.text) refers to clock.o(.text) for rt_tick_get
+    sys_arch.o(.text) refers to sys_arch.o(.constdata) for .constdata
+    sys_arch.o(.text) refers to object.o(.data) for rt_object_container
+    sys_arch.o(.text) refers to netif.o(.data) for netif_default
+    sys_arch.o(.text) refers to sys_arch.o(.data) for .data
+    dns.o(.text) refers to pbuf.o(.text) for pbuf_copy_partial
+    dns.o(.text) refers to def.o(.text) for lwip_htons
+    dns.o(.text) refers to ip_addr.o(.text) for ipaddr_addr
+    dns.o(.text) refers to udp.o(.text) for udp_new
+    dns.o(.text) refers to kservice.o(.text) for rt_kprintf
+    dns.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    dns.o(.text) refers to strlen.o(.text) for strlen
+    dns.o(.text) refers to dns.o(.data) for .data
+    dns.o(.text) refers to dns.o(.bss) for .bss
+    dns.o(.text) refers to ip_addr.o(.constdata) for ip_addr_any
+    dns.o(.text) refers to strcmpv7m.o(.text) for strcmp
+    dns.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    init.o(.text) refers to sys_arch.o(.text) for sys_init
+    init.o(.text) refers to netif.o(.text) for netif_init
+    init.o(.text) refers to sockets.o(.text) for lwip_socket_init
+    init.o(.text) refers to udp.o(.text) for udp_init
+    init.o(.text) refers to tcp.o(.text) for tcp_init
+    init.o(.text) refers to dns.o(.text) for dns_init
+    init.o(.text) refers to timers.o(.text) for sys_timeouts_init
+    netif.o(.text) refers to tcp.o(.text) for tcp_abort
+    netif.o(.text) refers to kservice.o(.text) for rt_kprintf
+    netif.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    netif.o(.text) refers to etharp.o(.text) for etharp_cleanup_netif
+    netif.o(.text) refers to tcp.o(.data) for tcp_active_pcbs
+    netif.o(.text) refers to netif.o(.data) for .data
+    pbuf.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    pbuf.o(.text) refers to tcp.o(.text) for tcp_segs_free
+    pbuf.o(.text) refers to tcpip.o(.text) for tcpip_callback_with_block
+    pbuf.o(.text) refers to kservice.o(.text) for rt_kprintf
+    pbuf.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    pbuf.o(.text) refers to mem.o(.text) for rt_free
+    pbuf.o(.text) refers to pbuf.o(.data) for .data
+    pbuf.o(.text) refers to tcp.o(.data) for tcp_active_pcbs
+    pbuf.o(.text) refers to memp.o(.constdata) for memp_sizes
+    pbuf.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    pbuf.o(.text) refers to strlen.o(.text) for strlen
+    raw.o(.text) refers to pbuf.o(.text) for pbuf_header
+    raw.o(.text) refers to kservice.o(.text) for rt_kprintf
+    raw.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    raw.o(.text) refers to ip.o(.text) for ip_route
+    raw.o(.text) refers to mem.o(.text) for rt_free
+    raw.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    raw.o(.text) refers to raw.o(.data) for .data
+    raw.o(.text) refers to ip.o(.data) for current_iphdr_dest
+    raw.o(.text) refers to memp.o(.constdata) for memp_sizes
+    sys.o(.text) refers to sys_arch.o(.text) for sys_sem_new
+    tcp.o(.text) refers to pbuf.o(.text) for pbuf_free
+    tcp.o(.text) refers to mem.o(.text) for rt_free
+    tcp.o(.text) refers to kservice.o(.text) for rt_kprintf
+    tcp.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    tcp.o(.text) refers to tcp_out.o(.text) for tcp_zero_window_probe
+    tcp.o(.text) refers to tcp.o(.data) for .data
+    tcp.o(.text) refers to tcp.o(.constdata) for .constdata
+    tcp.o(.text) refers to timers.o(.text) for tcp_timer_needed
+    tcp.o(.text) refers to ip.o(.text) for ip_route
+    tcp.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    tcp.o(.text) refers to memp.o(.constdata) for memp_sizes
+    tcp.o(.constdata) refers to tcp.o(.conststring) for .conststring
+    tcp.o(.constdata) refers to tcp.o(.data) for tcp_listen_pcbs
+    tcp_in.o(.text) refers to def.o(.text) for lwip_ntohs
+    tcp_in.o(.text) refers to tcp.o(.text) for tcp_segs_free
+    tcp_in.o(.text) refers to pbuf.o(.text) for pbuf_realloc
+    tcp_in.o(.text) refers to kservice.o(.text) for rt_kprintf
+    tcp_in.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    tcp_in.o(.text) refers to tcp_out.o(.text) for tcp_rexmit_fast
+    tcp_in.o(.text) refers to tcp_in.o(.data) for .data
+    tcp_in.o(.text) refers to tcp.o(.data) for tcp_ticks
+    tcp_in.o(.text) refers to tcp_in.o(.bss) for .bss
+    tcp_in.o(.text) refers to timers.o(.text) for tcp_timer_needed
+    tcp_in.o(.text) refers to ip.o(.data) for current_iphdr_src
+    tcp_in.o(.text) refers to ip_addr.o(.text) for ip4_addr_isbroadcast
+    tcp_in.o(.text) refers to mem.o(.text) for rt_free
+    tcp_out.o(.text) refers to pbuf.o(.text) for pbuf_alloc
+    tcp_out.o(.text) refers to kservice.o(.text) for rt_kprintf
+    tcp_out.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    tcp_out.o(.text) refers to def.o(.text) for lwip_htons
+    tcp_out.o(.text) refers to mem.o(.text) for rt_malloc
+    tcp_out.o(.text) refers to tcp.o(.text) for tcp_seg_free
+    tcp_out.o(.text) refers to memp.o(.constdata) for memp_sizes
+    tcp_out.o(.text) refers to tcp_out.o(.conststring) for .conststring
+    tcp_out.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    tcp_out.o(.text) refers to ip.o(.text) for ip_output
+    tcp_out.o(.text) refers to tcp.o(.data) for tcp_ticks
+    tcp_out.o(.text) refers to tcp_in.o(.data) for tcp_input_pcb
+    timers.o(.text) refers to mem.o(.text) for rt_malloc
+    timers.o(.text) refers to kservice.o(.text) for rt_kprintf
+    timers.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    timers.o(.text) refers to tcp.o(.text) for tcp_tmr
+    timers.o(.text) refers to etharp.o(.text) for etharp_tmr
+    timers.o(.text) refers to dns.o(.text) for dns_tmr
+    timers.o(.text) refers to memp.o(.constdata) for memp_sizes
+    timers.o(.text) refers to timers.o(.data) for .data
+    timers.o(.text) refers to tcp.o(.data) for tcp_active_pcbs
+    udp.o(.text) refers to pbuf.o(.text) for pbuf_header
+    udp.o(.text) refers to ip_addr.o(.text) for ip4_addr_isbroadcast
+    udp.o(.text) refers to def.o(.text) for lwip_ntohs
+    udp.o(.text) refers to kservice.o(.text) for rt_kprintf
+    udp.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    udp.o(.text) refers to icmp.o(.text) for icmp_dest_unreach
+    udp.o(.text) refers to ip.o(.text) for ip_output_if
+    udp.o(.text) refers to mem.o(.text) for rt_free
+    udp.o(.text) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    udp.o(.text) refers to ip.o(.data) for current_iphdr_dest
+    udp.o(.text) refers to udp.o(.data) for .data
+    udp.o(.text) refers to memp.o(.constdata) for memp_sizes
+    icmp.o(.text) refers to pbuf.o(.text) for pbuf_header
+    icmp.o(.text) refers to ip_addr.o(.text) for ip4_addr_isbroadcast
+    icmp.o(.text) refers to inet_chksum.o(.text) for inet_chksum_pbuf
+    icmp.o(.text) refers to kservice.o(.text) for rt_kprintf
+    icmp.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    icmp.o(.text) refers to ip.o(.text) for ip_output_if
+    icmp.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    icmp.o(.text) refers to ip.o(.data) for current_iphdr_dest
+    inet_chksum.o(.text) refers to def.o(.text) for lwip_htons
+    inet_chksum.o(.text) refers to kservice.o(.text) for rt_kprintf
+    inet_chksum.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    ip.o(.text) refers to def.o(.text) for lwip_ntohs
+    ip.o(.text) refers to pbuf.o(.text) for pbuf_free
+    ip.o(.text) refers to ip_addr.o(.text) for ip4_addr_isbroadcast
+    ip.o(.text) refers to raw.o(.text) for raw_input
+    ip.o(.text) refers to udp.o(.text) for udp_input
+    ip.o(.text) refers to tcp_in.o(.text) for tcp_input
+    ip.o(.text) refers to icmp.o(.text) for icmp_input
+    ip.o(.text) refers to kservice.o(.text) for rt_kprintf
+    ip.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    ip.o(.text) refers to netif.o(.data) for netif_list
+    ip.o(.text) refers to ip.o(.data) for .data
+    ip_addr.o(.text) refers to def.o(.text) for lwip_htonl
+    ip_addr.o(.text) refers to kservice.o(.text) for rt_kprintf
+    ip_addr.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    ip_addr.o(.text) refers to ip_addr.o(.bss) for .bss
+    etharp.o(.text) refers to kservice.o(.text) for rt_kprintf
+    etharp.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    etharp.o(.text) refers to pbuf.o(.text) for pbuf_free
+    etharp.o(.text) refers to mem.o(.text) for rt_free
+    etharp.o(.text) refers to ip_addr.o(.text) for ip4_addr_isbroadcast
+    etharp.o(.text) refers to etharp.o(.bss) for .bss
+    etharp.o(.text) refers to etharp.o(.conststring) for .conststring
+    etharp.o(.text) refers to def.o(.text) for lwip_htons
+    etharp.o(.text) refers to etharp.o(.constdata) for .constdata
+    etharp.o(.text) refers to etharp.o(.data) for .data
+    etharp.o(.text) refers to memp.o(.constdata) for memp_sizes
+    etharp.o(.text) refers to memcmp.o(.text) for memcmp
+    etharp.o(.text) refers to ip.o(.text) for ip_input
+    ethernetif.o(.text) refers to kservice.o(.text) for rt_assert_handler
+    ethernetif.o(.text) refers to ipc.o(.text) for rt_mb_send
+    ethernetif.o(.text) refers to device.o(.text) for rt_device_init
+    ethernetif.o(.text) refers to netif.o(.text) for netif_set_default
+    ethernetif.o(.text) refers to mem.o(.text) for rt_malloc
+    ethernetif.o(.text) refers to thread.o(.text) for rt_thread_find
+    ethernetif.o(.text) refers to netifapi.o(.text) for netifapi_netif_add
+    ethernetif.o(.text) refers to context_rvds.o(.text) for rt_hw_interrupt_disable
+    ethernetif.o(.text) refers to sys_arch.o(.text) for sys_arch_assert
+    ethernetif.o(.text) refers to pbuf.o(.text) for pbuf_free
+    ethernetif.o(.text) refers to strlen.o(.text) for strlen
+    ethernetif.o(.text) refers to strncmp.o(.text) for strncmp
+    ethernetif.o(.text) refers to ip_addr.o(.text) for ipaddr_aton
+    ethernetif.o(.text) refers to dns.o(.text) for dns_setserver
+    ethernetif.o(.text) refers to scheduler.o(.text) for rt_enter_critical
+    ethernetif.o(.text) refers to ethernetif.o(.constdata) for .constdata
+    ethernetif.o(.text) refers to ethernetif.o(.bss) for .bss
+    ethernetif.o(.text) refers to netif.o(.data) for netif_default
+    ethernetif.o(.text) refers to etharp.o(.text) for etharp_output
+    ethernetif.o(.text) refers to tcpip.o(.text) for tcpip_input
+    ethernetif.o(.text) refers to strcpy.o(.text) for strcpy
+    ethernetif.o(.text) refers to tcp.o(.data) for tcp_active_pcbs
+    ethernetif.o(.text) refers to tcp.o(.constdata) for tcp_state_str
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_set_if_name
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_set_if_desc
+    ethernetif.o(FSymTab) refers to ethernetif.o(.text) for set_if
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_set_dns_name
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_set_dns_desc
+    ethernetif.o(FSymTab) refers to ethernetif.o(.text) for set_dns
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_list_if_name
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_list_if_desc
+    ethernetif.o(FSymTab) refers to ethernetif.o(.text) for list_if
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_list_tcps_name
+    ethernetif.o(FSymTab) refers to ethernetif.o(.rodata.name) for __fsym_list_tcps_desc
+    ethernetif.o(FSymTab) refers to ethernetif.o(.text) for list_tcps
+    atoi.o(.text) refers to rt_errno_addr_intlibspace.o(.text) for __aeabi_errno_addr
+    atoi.o(.text) refers to strtol.o(.text) for strtol
+    rt_memcpy_v6.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    aeabi_memset.o(.text) refers to rt_memclr.o(.text) for _memset
+    rt_memclr.o(.text) refers to rt_memclr_w.o(.text) for _memset_w
+    strncpy.o(.text) refers to rt_memclr.o(.text) for __aeabi_memclr
+    mktime.o(.text) refers to _monlen.o(.constdata) for _monlen
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    rt_errno_addr.o(.text) refers to rt_errno_addr.o(.bss) for __aeabi_errno_addr_data
+    rt_errno_addr_intlibspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    strtol.o(.text) refers to rt_ctype_table.o(.text) for __rt_ctype_table
+    strtol.o(.text) refers to _strtoul.o(.text) for _strtoul
+    strtol.o(.text) refers to rt_errno_addr_intlibspace.o(.text) for __aeabi_errno_addr
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to startup.o(.text) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_ctype_table.o(.text) refers to rt_locale_intlibspace.o(.text) for __rt_locale
+    rt_ctype_table.o(.text) refers to lc_ctype_c.o(locale$$code) for _get_lc_ctype
+    _strtoul.o(.text) refers to _chval.o(.text) for _chval
+    _strtoul.o(.text) refers to rt_errno_addr_intlibspace.o(.text) for __aeabi_errno_addr
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_stm32f10x_cl.o(.text) for __user_initial_stackheap
+    rt_locale.o(.text) refers to rt_locale.o(.bss) for __rt_locale_data
+    rt_locale_intlibspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    lc_ctype_c.o(locale$$data) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000012) for __rt_lib_init_lc_ctype_2
+    lc_ctype_c.o(locale$$code) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000012) for __rt_lib_init_lc_ctype_2
+    lc_ctype_c.o(locale$$code) refers to strcmpv7m.o(.text) for strcmp
+    lc_ctype_c.o(locale$$code) refers to lc_ctype_c.o(locale$$data) for __lcctype_c_name
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$0000000F) refers (Weak) to rt_locale_intlibspace.o(.text) for __rt_locale
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers (Weak) to lc_ctype_c.o(locale$$code) for _get_lc_ctype
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing application.o(.rev16_text), (4 bytes).
+    Removing application.o(.revsh_text), (4 bytes).
+    Removing startup.o(.rev16_text), (4 bytes).
+    Removing startup.o(.revsh_text), (4 bytes).
+    Removing board.o(.rev16_text), (4 bytes).
+    Removing board.o(.revsh_text), (4 bytes).
+    Removing platform.o(.rev16_text), (4 bytes).
+    Removing platform.o(.revsh_text), (4 bytes).
+    Removing rt_stm32f10x_spi.o(.rev16_text), (4 bytes).
+    Removing rt_stm32f10x_spi.o(.revsh_text), (4 bytes).
+    Removing stm32_eth.o(.rev16_text), (4 bytes).
+    Removing stm32_eth.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_it.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_it.o(.revsh_text), (4 bytes).
+    Removing usart.o(.rev16_text), (4 bytes).
+    Removing usart.o(.revsh_text), (4 bytes).
+    Removing system_stm32f10x.o(.rev16_text), (4 bytes).
+    Removing system_stm32f10x.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_crc.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_crc.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_crc.o(.text), (64 bytes).
+    Removing stm32f10x_rcc.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_rcc.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_wwdg.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_wwdg.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_wwdg.o(.text), (272 bytes).
+    Removing stm32f10x_pwr.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_pwr.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_pwr.o(.text), (412 bytes).
+    Removing stm32f10x_exti.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_exti.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_exti.o(.text), (648 bytes).
+    Removing stm32f10x_bkp.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_bkp.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_bkp.o(.text), (680 bytes).
+    Removing stm32f10x_i2c.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_i2c.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_i2c.o(.text), (2760 bytes).
+    Removing stm32f10x_adc.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_adc.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_adc.o(.text), (3148 bytes).
+    Removing stm32f10x_dac.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_dac.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_dac.o(.text), (844 bytes).
+    Removing stm32f10x_rtc.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_rtc.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_rtc.o(.text), (476 bytes).
+    Removing stm32f10x_fsmc.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_fsmc.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_fsmc.o(.text), (2796 bytes).
+    Removing stm32f10x_tim.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_tim.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_tim.o(.text), (12840 bytes).
+    Removing stm32f10x_iwdg.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_iwdg.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_iwdg.o(.text), (216 bytes).
+    Removing stm32f10x_spi.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_spi.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_flash.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_flash.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_flash.o(.text), (1556 bytes).
+    Removing stm32f10x_sdio.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_sdio.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_sdio.o(.text), (1448 bytes).
+    Removing stm32f10x_gpio.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_gpio.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_usart.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_usart.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_dbgmcu.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_dbgmcu.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_dbgmcu.o(.text), (140 bytes).
+    Removing stm32f10x_dma.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_dma.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_dma.o(.text), (2060 bytes).
+    Removing stm32f10x_can.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_can.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_can.o(.text), (3468 bytes).
+    Removing stm32f10x_cec.o(.rev16_text), (4 bytes).
+    Removing stm32f10x_cec.o(.revsh_text), (4 bytes).
+    Removing stm32f10x_cec.o(.text), (616 bytes).
+    Removing misc.o(.rev16_text), (4 bytes).
+    Removing misc.o(.revsh_text), (4 bytes).
+    Removing mempool.o(.text), (908 bytes).
+    Removing mempool.o(.constdata), (62 bytes).
+    Removing mempool.o(.data), (8 bytes).
+    Removing backtrace.o(.text), (2 bytes).
+    Removing div0.o(.text), (2 bytes).
+    Removing showmem.o(.text), (120 bytes).
+    Removing showmem.o(.constdata), (18 bytes).
+    Removing netdb.o(.text), (580 bytes).
+    Removing netdb.o(.bss), (20 bytes).
+    Removing netdb.o(.data), (20 bytes).
+    Removing sys.o(.text), (34 bytes).
+    Removing ip_addr.o(.constdata), (4 bytes).
+
+94 unused section(s) (total 36478 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0001ee64, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0001ebc8, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00000150   Data   RO          993    RESET               startup_stm32f10x_cl.o
+    0x08000150   0x00000008   Code   RO         2651  * !!!main             c_w.l(__main.o)
+    0x08000158   0x00000002   Code   RO         2703    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x0800015a   0x00000000   Code   RO         2707    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x0800015a   0x00000000   Code   RO         2709    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x0800015a   0x00000000   Code   RO         2712    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x0800015a   0x00000000   Code   RO         2714    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x0800015a   0x00000000   Code   RO         2716    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x0800015a   0x00000006   Code   RO         2717    .ARM.Collect$$libinit$$0000000F  c_w.l(libinit2.o)
+    0x08000160   0x00000000   Code   RO         2719    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000160   0x0000000c   Code   RO         2720    .ARM.Collect$$libinit$$00000012  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2721    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2723    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2725    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2727    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2729    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2731    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2733    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2735    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2737    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2739    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2743    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2745    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2747    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x0800016c   0x00000000   Code   RO         2749    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x0800016c   0x00000002   Code   RO         2750    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x0800016e   0x00000002   Code   RO         2770    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x08000170   0x00000000   Code   RO         2783    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x08000170   0x00000000   Code   RO         2785    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x08000170   0x00000000   Code   RO         2788    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x08000170   0x00000000   Code   RO         2791    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x08000170   0x00000000   Code   RO         2793    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x08000170   0x00000000   Code   RO         2796    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x08000170   0x00000002   Code   RO         2797    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x08000172   0x00000000   Code   RO         2653    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x08000172   0x00000000   Code   RO         2666    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x08000172   0x00000006   Code   RO         2678    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000178   0x00000000   Code   RO         2668    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000178   0x00000004   Code   RO         2669    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x0800017c   0x00000000   Code   RO         2671    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x0800017c   0x00000008   Code   RO         2672    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x08000184   0x00000002   Code   RO         2704    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000186   0x00000000   Code   RO         2752    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000186   0x00000004   Code   RO         2753    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x0800018a   0x00000006   Code   RO         2754    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000190   0x000000e0   Code   RO            3    .text               application.o
+    0x08000270   0x000000b8   Code   RO          209    .text               startup.o
+    0x08000328   0x00000068   Code   RO          230    .text               board.o
+    0x08000390   0x00000ebc   Code   RO          256    .text               msd.o
+    0x0800124c   0x000000e4   Code   RO          285    .text               platform.o
+    0x08001330   0x00000228   Code   RO          319    .text               rt_stm32f10x_spi.o
+    0x08001558   0x00000734   Code   RO          339    .text               serial.o
+    0x08001c8c   0x00001dbc   Code   RO          391    .text               stm32_eth.o
+    0x08003a48   0x0000000c   Code   RO          442    .text               stm32f10x_it.o
+    0x08003a54   0x00000284   Code   RO          465    .text               usart.o
+    0x08003cd8   0x000001c4   Code   RO          494    .text               system_stm32f10x.o
+    0x08003e9c   0x00000930   Code   RO          540    .text               stm32f10x_rcc.o
+    0x080047cc   0x00000854   Code   RO          786    .text               stm32f10x_spi.o
+    0x08005020   0x00000958   Code   RO          850    .text               stm32f10x_gpio.o
+    0x08005978   0x00000bf4   Code   RO          870    .text               stm32f10x_usart.o
+    0x0800656c   0x0000019c   Code   RO          973    .text               misc.o
+    0x08006708   0x00000040   Code   RO          994    .text               startup_stm32f10x_cl.o
+    0x08006748   0x00000060   Code   RO          998    .text               clock.o
+    0x080067a8   0x00000300   Code   RO         1012    .text               device.o
+    0x08006aa8   0x00000118   Code   RO         1026    .text               idle.o
+    0x08006bc0   0x000013d0   Code   RO         1046    .text               ipc.o
+    0x08007f90   0x00000038   Code   RO         1063    .text               irq.o
+    0x08007fc8   0x00000810   Code   RO         1078    .text               kservice.o
+    0x080087d8   0x000006b4   Code   RO         1099    .text               mem.o
+    0x08008e8c   0x00000290   Code   RO         1138    .text               object.o
+    0x0800911c   0x0000026c   Code   RO         1157    .text               scheduler.o
+    0x08009388   0x00000544   Code   RO         1178    .text               thread.o
+    0x080098cc   0x00000324   Code   RO         1195    .text               timer.o
+    0x08009bf0   0x00000560   Code   RO         1214    .text               cpuport.o
+    0x0800a150   0x000000ec   Code   RO         1233    .text               context_rvds.o
+    0x0800a23c   0x00000340   Code   RO         1271    .text               dfs.o
+    0x0800a57c   0x000004e8   Code   RO         1305    .text               dfs_fs.o
+    0x0800aa64   0x00000820   Code   RO         1327    .text               dfs_file.o
+    0x0800b284   0x000004c4   Code   RO         1355    .text               dfs_posix.o
+    0x0800b748   0x000008f0   Code   RO         1375    .text               dfs_elm.o
+    0x0800c038   0x00002014   Code   RO         1406    .text               ff.o
+    0x0800e04c   0x000004f8   Code   RO         1422    .text               spi_core.o
+    0x0800e544   0x000001d0   Code   RO         1435    .text               spi_dev.o
+    0x0800e714   0x00000748   Code   RO         1448    .text               shell.o
+    0x0800ee5c   0x00000ad4   Code   RO         1482    .text               cmd.o
+    0x0800f930   0x000007dc   Code   RO         1539    .text               finsh_compiler.o
+    0x0801010c   0x00000024   Code   RO         1576    .text               finsh_error.o
+    0x08010130   0x000001b0   Code   RO         1592    .text               finsh_heap.o
+    0x080102e0   0x0000004c   Code   RO         1609    .text               finsh_init.o
+    0x0801032c   0x0000014c   Code   RO         1627    .text               finsh_node.o
+    0x08010478   0x000005be   Code   RO         1642    .text               finsh_ops.o
+    0x08010a36   0x00000002   PAD
+    0x08010a38   0x00000746   Code   RO         1660    .text               finsh_parser.o
+    0x0801117e   0x00000002   PAD
+    0x08011180   0x00000160   Code   RO         1675    .text               finsh_var.o
+    0x080112e0   0x000000b0   Code   RO         1698    .text               finsh_vm.o
+    0x08011390   0x00000544   Code   RO         1725    .text               finsh_token.o
+    0x080118d4   0x00000a58   Code   RO         1740    .text               api_lib.o
+    0x0801232c   0x000014c8   Code   RO         1822    .text               api_msg.o
+    0x080137f4   0x0000030c   Code   RO         1877    .text               netbuf.o
+    0x08013b00   0x000000cc   Code   RO         1936    .text               netifapi.o
+    0x08013bcc   0x00001564   Code   RO         1973    .text               sockets.o
+    0x08015130   0x00000350   Code   RO         2018    .text               tcpip.o
+    0x08015480   0x000006a8   Code   RO         2068    .text               sys_arch.o
+    0x08015b28   0x00000010   Code   RO         2111    .text               def.o
+    0x08015b38   0x00000618   Code   RO         2130    .text               dns.o
+    0x08016150   0x00000022   Code   RO         2150    .text               init.o
+    0x08016172   0x00000002   PAD
+    0x08016174   0x0000023c   Code   RO         2235    .text               netif.o
+    0x080163b0   0x00000cbe   Code   RO         2272    .text               pbuf.o
+    0x0801706e   0x00000002   PAD
+    0x08017070   0x000001dc   Code   RO         2300    .text               raw.o
+    0x0801724c   0x00001040   Code   RO         2332    .text               tcp.o
+    0x0801828c   0x00001510   Code   RO         2360    .text               tcp_in.o
+    0x0801979c   0x00000f5a   Code   RO         2386    .text               tcp_out.o
+    0x0801a6f6   0x00000002   PAD
+    0x0801a6f8   0x00000224   Code   RO         2399    .text               timers.o
+    0x0801a91c   0x00000460   Code   RO         2425    .text               udp.o
+    0x0801ad7c   0x00000368   Code   RO         2450    .text               icmp.o
+    0x0801b0e4   0x0000022c   Code   RO         2474    .text               inet_chksum.o
+    0x0801b310   0x000002f8   Code   RO         2486    .text               ip.o
+    0x0801b608   0x0000023c   Code   RO         2510    .text               ip_addr.o
+    0x0801b844   0x00000b24   Code   RO         2540    .text               etharp.o
+    0x0801c368   0x000008b0   Code   RO         2562    .text               ethernetif.o
+    0x0801cc18   0x0000001a   Code   RO         2621    .text               c_w.l(atoi.o)
+    0x0801cc32   0x00000058   Code   RO         2623    .text               c_w.l(memcmp.o)
+    0x0801cc8a   0x00000048   Code   RO         2625    .text               c_w.l(strcpy.o)
+    0x0801ccd2   0x00000016   Code   RO         2627    .text               c_w.l(strrchr.o)
+    0x0801cce8   0x0000003e   Code   RO         2629    .text               c_w.l(strlen.o)
+    0x0801cd26   0x00000096   Code   RO         2631    .text               c_w.l(strncmp.o)
+    0x0801cdbc   0x0000008a   Code   RO         2633    .text               c_w.l(rt_memcpy_v6.o)
+    0x0801ce46   0x00000064   Code   RO         2635    .text               c_w.l(rt_memcpy_w.o)
+    0x0801ceaa   0x00000010   Code   RO         2637    .text               c_w.l(aeabi_memset.o)
+    0x0801ceba   0x00000044   Code   RO         2639    .text               c_w.l(rt_memclr.o)
+    0x0801cefe   0x0000004e   Code   RO         2641    .text               c_w.l(rt_memclr_w.o)
+    0x0801cf4c   0x00000056   Code   RO         2643    .text               c_w.l(strncpy.o)
+    0x0801cfa2   0x00000002   PAD
+    0x0801cfa4   0x00000080   Code   RO         2645    .text               c_w.l(strcmpv7m.o)
+    0x0801d024   0x000001a8   Code   RO         2647    .text               c_w.l(mktime.o)
+    0x0801d1cc   0x00000006   Code   RO         2649    .text               c_w.l(heapauxi.o)
+    0x0801d1d2   0x00000002   PAD
+    0x0801d1d4   0x00000008   Code   RO         2657    .text               c_w.l(rt_errno_addr_intlibspace.o)
+    0x0801d1dc   0x00000070   Code   RO         2659    .text               c_w.l(strtol.o)
+    0x0801d24c   0x00000008   Code   RO         2662    .text               c_w.l(libspace.o)
+    0x0801d254   0x00000010   Code   RO         2680    .text               c_w.l(rt_ctype_table.o)
+    0x0801d264   0x0000009e   Code   RO         2682    .text               c_w.l(_strtoul.o)
+    0x0801d302   0x0000004a   Code   RO         2684    .text               c_w.l(sys_stackheap_outer.o)
+    0x0801d34c   0x00000008   Code   RO         2689    .text               c_w.l(rt_locale_intlibspace.o)
+    0x0801d354   0x0000001c   Code   RO         2691    .text               c_w.l(_chval.o)
+    0x0801d370   0x00000012   Code   RO         2696    .text               c_w.l(exit.o)
+    0x0801d382   0x00000002   PAD
+    0x0801d384   0x0000000c   Code   RO         2762    .text               c_w.l(sys_exit.o)
+    0x0801d390   0x00000002   Code   RO         2773    .text               c_w.l(use_no_semi.o)
+    0x0801d392   0x00000000   Code   RO         2775    .text               c_w.l(indicate_semi.o)
+    0x0801d392   0x00000002   PAD
+    0x0801d394   0x0000002c   Code   RO         2694    locale$$code        c_w.l(lc_ctype_c.o)
+    0x0801d3c0   0x0000000f   Data   RO          258    .constdata          msd.o
+    0x0801d3cf   0x000000d3   Data   RO          340    .constdata          serial.o
+    0x0801d4a2   0x00000002   PAD
+    0x0801d4a4   0x00000050   Data   RO          467    .constdata          usart.o
+    0x0801d4f4   0x000000a8   Data   RO         1013    .constdata          device.o
+    0x0801d59c   0x00000016   Data   RO         1028    .constdata          idle.o
+    0x0801d5b2   0x000001d7   Data   RO         1047    .constdata          ipc.o
+    0x0801d789   0x00000122   Data   RO         1080    .constdata          kservice.o
+    0x0801d8ab   0x00000046   Data   RO         1101    .constdata          mem.o
+    0x0801d8f1   0x0000005e   Data   RO         1139    .constdata          object.o
+    0x0801d94f   0x0000004e   Data   RO         1159    .constdata          scheduler.o
+    0x0801d99d   0x000000aa   Data   RO         1179    .constdata          thread.o
+    0x0801da47   0x0000005c   Data   RO         1196    .constdata          timer.o
+    0x0801daa3   0x00000013   Data   RO         1215    .constdata          cpuport.o
+    0x0801dab6   0x00000023   Data   RO         1273    .constdata          dfs.o
+    0x0801dad9   0x00000033   Data   RO         1306    .constdata          dfs_fs.o
+    0x0801db0c   0x000000b9   Data   RO         1376    .constdata          dfs_elm.o
+    0x0801dbc5   0x00000001   PAD
+    0x0801dbc6   0x0000002c   Data   RO         1407    .constdata          ff.o
+    0x0801dbf2   0x000000a3   Data   RO         1423    .constdata          spi_core.o
+    0x0801dc95   0x00000081   Data   RO         1436    .constdata          spi_dev.o
+    0x0801dd16   0x00000060   Data   RO         1450    .constdata          shell.o
+    0x0801dd76   0x00000002   PAD
+    0x0801dd78   0x00000050   Data   RO         1483    .constdata          cmd.o
+    0x0801ddc8   0x000000c4   Data   RO         1643    .constdata          finsh_ops.o
+    0x0801de8c   0x00000040   Data   RO         1726    .constdata          finsh_token.o
+    0x0801decc   0x00000040   Data   RO         1975    .constdata          sockets.o
+    0x0801df0c   0x000000b3   Data   RO         2069    .constdata          sys_arch.o
+    0x0801dfbf   0x00000001   PAD
+    0x0801dfc0   0x0000001c   Data   RO         2202    .constdata          memp.o
+    0x0801dfdc   0x00000054   Data   RO         2333    .constdata          tcp.o
+    0x0801e030   0x00000004   Data   RO         2512    .constdata          ip_addr.o
+    0x0801e034   0x0000000c   Data   RO         2542    .constdata          etharp.o
+    0x0801e040   0x00000057   Data   RO         2564    .constdata          ethernetif.o
+    0x0801e097   0x0000000c   Data   RO         2661    .constdata          c_w.l(_monlen.o)
+    0x0801e0a3   0x00000001   PAD
+    0x0801e0a4   0x000000ed   Data   RO         1102    .conststring        mem.o
+    0x0801e191   0x00000003   PAD
+    0x0801e194   0x00000048   Data   RO         1377    .conststring        dfs_elm.o
+    0x0801e1dc   0x000001ad   Data   RO         1484    .conststring        cmd.o
+    0x0801e389   0x00000003   PAD
+    0x0801e38c   0x000000f3   Data   RO         1577    .conststring        finsh_error.o
+    0x0801e47f   0x00000001   PAD
+    0x0801e480   0x0000003e   Data   RO         1727    .conststring        finsh_token.o
+    0x0801e4be   0x00000002   PAD
+    0x0801e4c0   0x00000075   Data   RO         2334    .conststring        tcp.o
+    0x0801e535   0x00000003   PAD
+    0x0801e538   0x00000055   Data   RO         2387    .conststring        tcp_out.o
+    0x0801e58d   0x00000003   PAD
+    0x0801e590   0x00000044   Data   RO         2543    .conststring        etharp.o
+    0x0801e5d4   0x0000000b   Data   RO          394    .rodata.name        stm32_eth.o
+    0x0801e5df   0x00000014   Data   RO          395    .rodata.name        stm32_eth.o
+    0x0801e5f3   0x00000009   Data   RO          396    .rodata.name        stm32_eth.o
+    0x0801e5fc   0x00000012   Data   RO          397    .rodata.name        stm32_eth.o
+    0x0801e60e   0x0000000a   Data   RO          398    .rodata.name        stm32_eth.o
+    0x0801e618   0x00000013   Data   RO          399    .rodata.name        stm32_eth.o
+    0x0801e62b   0x0000000a   Data   RO          400    .rodata.name        stm32_eth.o
+    0x0801e635   0x00000013   Data   RO          401    .rodata.name        stm32_eth.o
+    0x0801e648   0x00000009   Data   RO         1104    .rodata.name        mem.o
+    0x0801e651   0x0000001e   Data   RO         1105    .rodata.name        mem.o
+    0x0801e66f   0x00000005   Data   RO         1307    .rodata.name        dfs_fs.o
+    0x0801e674   0x00000013   Data   RO         1308    .rodata.name        dfs_fs.o
+    0x0801e687   0x00000003   Data   RO         1309    .rodata.name        dfs_fs.o
+    0x0801e68a   0x0000000e   Data   RO         1310    .rodata.name        dfs_fs.o
+    0x0801e698   0x00000003   Data   RO         1329    .rodata.name        dfs_file.o
+    0x0801e69b   0x00000018   Data   RO         1330    .rodata.name        dfs_file.o
+    0x0801e6b3   0x00000003   Data   RO         1331    .rodata.name        dfs_file.o
+    0x0801e6b6   0x0000001c   Data   RO         1332    .rodata.name        dfs_file.o
+    0x0801e6d2   0x00000004   Data   RO         1333    .rodata.name        dfs_file.o
+    0x0801e6d6   0x0000000b   Data   RO         1334    .rodata.name        dfs_file.o
+    0x0801e6e1   0x00000005   Data   RO         1335    .rodata.name        dfs_file.o
+    0x0801e6e6   0x00000011   Data   RO         1336    .rodata.name        dfs_file.o
+    0x0801e6f7   0x00000006   Data   RO         1356    .rodata.name        dfs_posix.o
+    0x0801e6fd   0x00000013   Data   RO         1357    .rodata.name        dfs_posix.o
+    0x0801e710   0x00000006   Data   RO         1486    .rodata.name        cmd.o
+    0x0801e716   0x00000010   Data   RO         1487    .rodata.name        cmd.o
+    0x0801e726   0x00000008   Data   RO         1488    .rodata.name        cmd.o
+    0x0801e72e   0x00000023   Data   RO         1489    .rodata.name        cmd.o
+    0x0801e751   0x0000000c   Data   RO         1490    .rodata.name        cmd.o
+    0x0801e75d   0x0000000c   Data   RO         1491    .rodata.name        cmd.o
+    0x0801e769   0x00000009   Data   RO         1492    .rodata.name        cmd.o
+    0x0801e772   0x00000019   Data   RO         1493    .rodata.name        cmd.o
+    0x0801e78b   0x0000000b   Data   RO         1494    .rodata.name        cmd.o
+    0x0801e796   0x00000015   Data   RO         1495    .rodata.name        cmd.o
+    0x0801e7ab   0x0000000b   Data   RO         1496    .rodata.name        cmd.o
+    0x0801e7b6   0x00000015   Data   RO         1497    .rodata.name        cmd.o
+    0x0801e7cb   0x0000000d   Data   RO         1498    .rodata.name        cmd.o
+    0x0801e7d8   0x00000018   Data   RO         1499    .rodata.name        cmd.o
+    0x0801e7f0   0x0000000e   Data   RO         1500    .rodata.name        cmd.o
+    0x0801e7fe   0x0000001d   Data   RO         1501    .rodata.name        cmd.o
+    0x0801e81b   0x0000000d   Data   RO         1502    .rodata.name        cmd.o
+    0x0801e828   0x0000001b   Data   RO         1503    .rodata.name        cmd.o
+    0x0801e843   0x0000000b   Data   RO         1504    .rodata.name        cmd.o
+    0x0801e84e   0x00000015   Data   RO         1505    .rodata.name        cmd.o
+    0x0801e863   0x0000000c   Data   RO         1506    .rodata.name        cmd.o
+    0x0801e86f   0x00000016   Data   RO         1507    .rodata.name        cmd.o
+    0x0801e885   0x00000005   Data   RO         1508    .rodata.name        cmd.o
+    0x0801e88a   0x0000001a   Data   RO         1509    .rodata.name        cmd.o
+    0x0801e8a4   0x00000006   Data   RO         1510    .rodata.name        cmd.o
+    0x0801e8aa   0x00000019   Data   RO         1511    .rodata.name        cmd.o
+    0x0801e8c3   0x00000007   Data   RO         2565    .rodata.name        ethernetif.o
+    0x0801e8ca   0x0000001e   Data   RO         2566    .rodata.name        ethernetif.o
+    0x0801e8e8   0x00000008   Data   RO         2567    .rodata.name        ethernetif.o
+    0x0801e8f0   0x00000017   Data   RO         2568    .rodata.name        ethernetif.o
+    0x0801e907   0x00000008   Data   RO         2569    .rodata.name        ethernetif.o
+    0x0801e90f   0x00000023   Data   RO         2570    .rodata.name        ethernetif.o
+    0x0801e932   0x0000000a   Data   RO         2571    .rodata.name        ethernetif.o
+    0x0801e93c   0x0000001c   Data   RO         2572    .rodata.name        ethernetif.o
+    0x0801e958   0x0000000c   Data   RO          402    FSymTab             stm32_eth.o
+    0x0801e964   0x0000000c   Data   RO          403    FSymTab             stm32_eth.o
+    0x0801e970   0x0000000c   Data   RO          404    FSymTab             stm32_eth.o
+    0x0801e97c   0x0000000c   Data   RO          405    FSymTab             stm32_eth.o
+    0x0801e988   0x0000000c   Data   RO         1106    FSymTab             mem.o
+    0x0801e994   0x0000000c   Data   RO         1311    FSymTab             dfs_fs.o
+    0x0801e9a0   0x0000000c   Data   RO         1312    FSymTab             dfs_fs.o
+    0x0801e9ac   0x0000000c   Data   RO         1337    FSymTab             dfs_file.o
+    0x0801e9b8   0x0000000c   Data   RO         1338    FSymTab             dfs_file.o
+    0x0801e9c4   0x0000000c   Data   RO         1339    FSymTab             dfs_file.o
+    0x0801e9d0   0x0000000c   Data   RO         1340    FSymTab             dfs_file.o
+    0x0801e9dc   0x0000000c   Data   RO         1358    FSymTab             dfs_posix.o
+    0x0801e9e8   0x0000000c   Data   RO         1512    FSymTab             cmd.o
+    0x0801e9f4   0x0000000c   Data   RO         1513    FSymTab             cmd.o
+    0x0801ea00   0x0000000c   Data   RO         1514    FSymTab             cmd.o
+    0x0801ea0c   0x0000000c   Data   RO         1515    FSymTab             cmd.o
+    0x0801ea18   0x0000000c   Data   RO         1516    FSymTab             cmd.o
+    0x0801ea24   0x0000000c   Data   RO         1517    FSymTab             cmd.o
+    0x0801ea30   0x0000000c   Data   RO         1518    FSymTab             cmd.o
+    0x0801ea3c   0x0000000c   Data   RO         1519    FSymTab             cmd.o
+    0x0801ea48   0x0000000c   Data   RO         1520    FSymTab             cmd.o
+    0x0801ea54   0x0000000c   Data   RO         1521    FSymTab             cmd.o
+    0x0801ea60   0x0000000c   Data   RO         1522    FSymTab             cmd.o
+    0x0801ea6c   0x0000000c   Data   RO         1523    FSymTab             cmd.o
+    0x0801ea78   0x0000000c   Data   RO         2573    FSymTab             ethernetif.o
+    0x0801ea84   0x0000000c   Data   RO         2574    FSymTab             ethernetif.o
+    0x0801ea90   0x0000000c   Data   RO         2575    FSymTab             ethernetif.o
+    0x0801ea9c   0x0000000c   Data   RO         2576    FSymTab             ethernetif.o
+    0x0801eaa8   0x00000000   Data   RO         2828    Region$$Table       anon$$obj.o
+    0x0801eaa8   0x00000010   Data   RO         1524    VSymTab             cmd.o
+    0x0801eab8   0x00000110   Data   RO         2693    locale$$data        c_w.l(lc_ctype_c.o)
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00004e80, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000008   Data   RW          287    .data               platform.o
+    0x20000008   0x00000008   Data   RW          320    .data               rt_stm32f10x_spi.o
+    0x20000010   0x00000010   Data   RW          393    .data               stm32_eth.o
+    0x20000020   0x00000008   Data   RW          468    .data               usart.o
+    0x20000028   0x00000014   Data   RW          495    .data               system_stm32f10x.o
+    0x2000003c   0x00000014   Data   RW          541    .data               stm32f10x_rcc.o
+    0x20000050   0x00000004   Data   RW          999    .data               clock.o
+    0x20000054   0x00000004   Data   RW         1029    .data               idle.o
+    0x20000058   0x00000001   Data   RW         1064    .data               irq.o
+    0x20000059   0x00000003   PAD
+    0x2000005c   0x0000000c   Data   RW         1081    .data               kservice.o
+    0x20000068   0x00000020   Data   RW         1103    .data               mem.o
+    0x20000088   0x000000a4   Data   RW         1140    .data               object.o
+    0x2000012c   0x00000018   Data   RW         1160    .data               scheduler.o
+    0x20000144   0x00000010   Data   RW         1197    .data               timer.o
+    0x20000154   0x00000004   Data   RW         1216    .data               cpuport.o
+    0x20000158   0x00000004   Data   RW         1217    .data               cpuport.o
+    0x2000015c   0x00000004   Data   RW         1218    .data               cpuport.o
+    0x20000160   0x00000004   Data   RW         1219    .data               cpuport.o
+    0x20000164   0x00000008   Data   RW         1378    .data               dfs_elm.o
+    0x2000016c   0x0000000c   Data   RW         1408    .data               ff.o
+    0x20000178   0x00000004   Data   RW         1451    .data               shell.o
+    0x2000017c   0x00000004   Data   RW         1466    .data               symbol.o
+    0x20000180   0x00000004   Data   RW         1467    .data               symbol.o
+    0x20000184   0x00000004   Data   RW         1468    .data               symbol.o
+    0x20000188   0x00000004   Data   RW         1469    .data               symbol.o
+    0x2000018c   0x00000004   Data   RW         1485    .data               cmd.o
+    0x20000190   0x00000008   Data   RW         1540    .data               finsh_compiler.o
+    0x20000198   0x00000040   Data   RW         1578    .data               finsh_error.o
+    0x200001d8   0x00000008   Data   RW         1594    .data               finsh_heap.o
+    0x200001e0   0x00000004   Data   RW         1677    .data               finsh_var.o
+    0x200001e4   0x0000000c   Data   RW         1700    .data               finsh_vm.o
+    0x200001f0   0x00000008   Data   RW         1976    .data               sockets.o
+    0x200001f8   0x0000000c   Data   RW         2019    .data               tcpip.o
+    0x20000204   0x00000006   Data   RW         2070    .data               sys_arch.o
+    0x2000020a   0x00000002   PAD
+    0x2000020c   0x00000014   Data   RW         2132    .data               dns.o
+    0x20000220   0x0000000c   Data   RW         2236    .data               netif.o
+    0x2000022c   0x00000001   Data   RW         2273    .data               pbuf.o
+    0x2000022d   0x00000003   PAD
+    0x20000230   0x00000004   Data   RW         2301    .data               raw.o
+    0x20000234   0x00000024   Data   RW         2335    .data               tcp.o
+    0x20000258   0x0000001c   Data   RW         2362    .data               tcp_in.o
+    0x20000274   0x00000008   Data   RW         2400    .data               timers.o
+    0x2000027c   0x00000008   Data   RW         2426    .data               udp.o
+    0x20000284   0x00000014   Data   RW         2487    .data               ip.o
+    0x20000298   0x00000001   Data   RW         2544    .data               etharp.o
+    0x20000299   0x00000003   PAD
+    0x2000029c   0x00000058   Zero   RW          257    .bss                msd.o
+    0x200002f4   0x000000bc   Zero   RW          286    .bss                platform.o
+    0x200003b0   0x00002554   Zero   RW          392    .bss                stm32_eth.o
+    0x20002904   0x00000054   Zero   RW          466    .bss                usart.o
+    0x20002958   0x00000180   Zero   RW         1027    .bss                idle.o
+    0x20002ad8   0x00000080   Zero   RW         1079    .bss                kservice.o
+    0x20002b58   0x00000020   Zero   RW         1100    .bss                mem.o
+    0x20002b78   0x00000100   Zero   RW         1158    .bss                scheduler.o
+    0x20002c78   0x000000d4   Zero   RW         1272    .bss                dfs.o
+    0x20002d4c   0x00000124   Zero   RW         1328    .bss                dfs_file.o
+    0x20002e70   0x00000880   Zero   RW         1449    .bss                shell.o
+    0x200036f0   0x00000080   Zero   RW         1593    .bss                finsh_heap.o
+    0x20003770   0x00000140   Zero   RW         1628    .bss                finsh_node.o
+    0x200038b0   0x000000c0   Zero   RW         1676    .bss                finsh_var.o
+    0x20003970   0x00000180   Zero   RW         1699    .bss                finsh_vm.o
+    0x20003af0   0x00000060   Zero   RW         1974    .bss                sockets.o
+    0x20003b50   0x00000663   Zero   RW         2131    .bss                dns.o
+    0x200041b3   0x00000001   PAD
+    0x200041b4   0x00000010   Zero   RW         2361    .bss                tcp_in.o
+    0x200041c4   0x00000010   Zero   RW         2511    .bss                ip_addr.o
+    0x200041d4   0x000000c8   Zero   RW         2541    .bss                etharp.o
+    0x2000429c   0x00000580   Zero   RW         2563    .bss                ethernetif.o
+    0x2000481c   0x00000060   Zero   RW         2663    .bss                c_w.l(libspace.o)
+    0x2000487c   0x00000004   PAD
+    0x20004880   0x00000200   Zero   RW          992    HEAP                startup_stm32f10x_cl.o
+    0x20004a80   0x00000400   Zero   RW          991    STACK               startup_stm32f10x_cl.o
+
